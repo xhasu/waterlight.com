@@ -1,0 +1,50 @@
+
+.showcase {
+  position: relative;
+  background: black;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+  &-title {
+    margin-top: 110px;
+    margin-bottom: 90px;
+    font-size: 50px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+
+  &-video {
+    position: relative;
+    margin-bottom: 90px;
+    img {
+      @include img-fluid();
+    }
+  }
+
+  &-show-gallery {
+    margin-bottom: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 5px;
+    cursor: pointer;
+
+    span {
+      position: relative;
+      display: inline-block;
+      margin: 0 auto;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        right: 0;
+        left: 0;
+        bottom: -4px;
+        background: white;
+      }
+    }
+  }
+}

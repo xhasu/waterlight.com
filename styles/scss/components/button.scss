@@ -1,0 +1,43 @@
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 999px;
+  text-align: center;
+  color: black;
+  background: transparent;
+  text-decoration: none;
+  user-select: none;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-secondary {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  width: 270px;
+  height: 60px;
+  background-color: $secondary-color;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  box-shadow: 0 0 50px rgba(255, 210, 170, .2);
+
+  @include below($tablet)  {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 220px;
+    height: 40px;
+    font-size: 12px;
+    box-shadow: 0 0 25px rgba(255, 210, 170, .2);
+  }
+} 

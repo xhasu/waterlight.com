@@ -1,0 +1,24 @@
+.blurred {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 720px;
+  height: 100%;
+  z-index: 0;
+  user-select: none;
+  pointer-events: none;
+  
+  &.left {
+    left: 0;
+    right: auto;
+    background-image: transparent;
+    background-image: linear-gradient(-90deg, rgba(black, 0), black);
+  }
+  &.right {
+    right: 0;
+    left: auto;
+    background-image: transparent;
+    background-image: linear-gradient(90deg, rgba(black, 0), black);
+  }
+}

@@ -1,0 +1,81 @@
+
+
+.head-title {
+  margin-bottom: 26px;
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  &.lead {
+    margin-bottom: 0;
+    font-size: 60px;
+    letter-spacing: 8px;
+  }
+  &.xl {
+    margin-bottom: 0;
+    font-size: 70px;
+    letter-spacing: normal;
+  }
+}
+
+.head-subtitle {
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  &.lead {
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+  }
+}
+
+.head-description {
+  p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  p.lead {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  p.bold {
+    font-weight: bold;
+  }
+  
+}
+
+.head-box {
+  width: 100%;
+  max-width: 410px;
+  box-sizing: border-box;
+  &.box-left {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  &.box-right {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+.head-info {
+  width: 100%;
+  max-width: 620px;
+  .head-subtitle.lead {
+    margin-bottom: 30px;
+  }
+  p.lead {
+    max-width: 490px;
+    margin-bottom: 22px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.head-bordered {
+  padding-left: 25px;
+  border-left: 5px solid white
+}

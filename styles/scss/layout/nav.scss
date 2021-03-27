@@ -1,0 +1,96 @@
+
+.header-nav {
+  position: relative;
+  // @include cover('fixed');
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+
+  // background-image: url('/images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @include below($tablet) {
+    background-image: url('/images/background.png');
+  }
+
+  .header-links {
+    display: block;
+    li {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.nav {
+  &-close {
+    @include absolute($top: 22px, $left: 16px);
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 10;
+    svg {
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+  &-brand {
+    flex: none;
+    position: relative;
+    text-align: center;
+    padding: 18px 0;
+    box-sizing: border-box;
+    img {
+      @include img-fluid();
+    }
+  }
+  &-content {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &-actions {
+    text-align: center;
+  }
+
+  &-lang {
+    position: relative;
+    flex: none;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    span {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      &:after {
+        display: none;
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: white;
+      }
+      &:hover::after {
+        display: block;
+      }
+    }
+    span.en-EN.en,
+    span.es-ES.es {
+      font-weight: bold;
+      &:after {
+        display: block;
+      }
+    }
+  }
+
+}
