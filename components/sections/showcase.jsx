@@ -8,7 +8,7 @@ import Gallery from '../ui/gallery'
 
 const Showcase = () => {
 
-  const [isVisible, setVisible] = useState(false);
+  const [isVisible, setVisible] = useState(true);
 
   const handleVisible = () => {
     setVisible(prev => !prev)
