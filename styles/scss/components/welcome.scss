@@ -1,0 +1,42 @@
+
+.welcome {
+  height: 100%;
+  min-height: calc(100vh - 104px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  &-media {
+    position: relative;
+  }
+  &-logo {
+    position: relative;
+    max-width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    text-align: center;
+    img {
+      @include img-fluid();
+    }
+  }
+  &-caption {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &-icon {
+    @include absolute($bottom: 15px, $left: 0, $right: 0);
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    width: 30px;
+    height: 20px;
+    background-color: white;
+    z-index: 1;
+  }
+}

@@ -2,9 +2,15 @@
 .header {
   position: fixed;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   box-sizing: border-box;
   z-index: 10;
+
+  @include below($tablet) {
+    display: none;
+  }
+
   &-container {
     display: flex;
     padding: 10px 20px 0 ;
@@ -40,6 +46,7 @@
       display: block;
       padding: 0 10px;
       font-size: 15px;
+      line-height: 1.2;
       text-align: center;
       text-transform: uppercase;
       box-sizing: border-box;
@@ -77,6 +84,40 @@
           display: block;
         }
       }
+    }
+  }
+}
+
+.nav-bar {
+  @include fixed($top: 20px, $left: 15px);
+  width: 30px;
+  cursor: pointer;
+  z-index: 20;
+
+  @include above($tablet) {
+    display: none;
+  }
+
+  &:hover span:nth-child(2) {
+    width: 100%;
+  }
+
+  span {
+    display: block;
+    height: 2px;
+    background: white;
+    margin-bottom: 7px;
+    
+    &:nth-child(2) {
+      width: 100%;
+      transition: width 400ms ease-in-out;
+    }
+    &:nth-child(2) {
+      width: 80%;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }

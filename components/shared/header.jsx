@@ -1,5 +1,7 @@
-import React, { useContext } from 'react'
+import React, { useState, useContext } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
+import useBodyOverflow from '../../hooks/useBodyOverflow';
 import useTranslation from '../../hooks/useTranslation';
 import { LanguageContext } from '../../contexts/language-context';
 
@@ -7,12 +9,23 @@ import Close from '../ui/close';
 
 const Header = () => {
 
+  const [showMenu, setShowMenu] = useState(false);
+
   const [locale, setlocale] = useContext(LanguageContext);
   const { t } = useTranslation();
+  const { toggleBodyOverflow } = useBodyOverflow();
 
   const changeLocale = (lang) => {
     setlocale(lang);
   };
+
+  const changeShowMenu = () => {
+    setShowMenu(prev => {
+      let value = !prev
+      toggleBodyOverflow();
+      return value;
+    });
+  }
 
   return (
     <>
@@ -42,37 +55,63 @@ const Header = () => {
         </div>
       </header>
 
-      <div className="header-nav">
-        <span className="nav-close">
-          <Close />
-        </span>
-        <div className="nav-brand">
-          <img src="/images/logotype.png" alt="waterlight" width="76" height="33" />
-        </div>
-        <div className="nav-content">
-          <ul className="header-links">
-            <li>{t('header.what')}</li>
-            <li>{t('header.why')}</li>
-            <li>{t('header.how')}</li>
-          </ul>
-          <div className="nav-actions">
-            <a href="#" className="btn btn-secondary">Únete aquí a WATERLIGHT</a>
-          </div>
-        </div>
-        <div className="nav-lang">
-          <span
-            className={`es-ES ${locale}`}
-            onClick={() => { changeLocale('es') }}>
-            ES
-              </span>
-            &nbsp; | &nbsp;
-            <span
-            className={`en-EN ${locale}`}
-            onClick={() => { changeLocale('en') }}>
-            EN
-              </span>
-        </div>
+      <div className="nav-bar" onClick={changeShowMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+
+      <AnimatePresence>
+        {showMenu && (
+          <div className="header-nav">
+            <span className="nav-close" onClick={changeShowMenu}>
+              <Close />
+            </span>
+            <div className="nav-brand">
+              <motion.div
+                initial={{opacity: 0,y: -50}}
+                animate={{opacity: 1,y: 0}}
+                exit={{opacity: .4}}>
+                <img src="/images/logotype.png" alt="waterlight" width="76" height="33" />
+              </motion.div>
+            </div>
+            <div className="nav-content">
+              <motion.div
+                initial={{opacity: 0,x: -400}}
+                animate={{opacity: 1,x: 0}}
+                exit={{opacity: .4}}>
+                <ul className="header-links">
+                  <li>{t('header.what')}</li>
+                  <li>{t('header.why')}</li>
+                  <li>{t('header.how')}</li>
+                </ul>
+              </motion.div>
+              <div className="nav-actions">
+                <a href="#" className="btn btn-secondary">Únete aquí a WATERLIGHT</a>
+              </div>
+            </div>
+            <motion.div
+              initial={{opacity: 0,y: 50}}
+              animate={{opacity: 1,y: 0}}
+              exit={{opacity: .4}}> 
+              <div className="nav-lang">
+                <span
+                  className={`es-ES ${locale}`}
+                  onClick={() => { changeLocale('es') }}>
+                  ES
+                  </span>
+                &nbsp; | &nbsp;
+                <span
+                  className={`en-EN ${locale}`}
+                  onClick={() => { changeLocale('en') }}>
+                  EN
+                  </span>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
     </>
   )
 }

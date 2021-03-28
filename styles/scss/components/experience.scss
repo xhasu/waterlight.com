@@ -1,0 +1,25 @@
+
+.experience {
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 10px;
+  background-color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  .head-box {
+    color: black;
+
+    &.expand {
+      max-width: 690px;
+    }
+
+    &.compact {
+      max-width: 280px;
+    }
+
+    p.lead {
+      margin-bottom: 6px;
+    }
+  }
+}

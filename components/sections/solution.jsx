@@ -24,7 +24,7 @@ const Solution = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="panel container">
         <div className="head-box">
           <div className="head-title">la solución</div>
           <div className="head-description">

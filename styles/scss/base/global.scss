@@ -111,7 +111,8 @@ small {
 }
 
 main {
-  min-height: 60vh
+  position: relative;
+  min-height: 60vh;
 }
 
 section {
@@ -121,6 +122,8 @@ section {
 
 .container {
   @include center($app-width);
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .compact {
