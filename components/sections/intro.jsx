@@ -1,13 +1,61 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
+import { gsap } from 'gsap/dist/gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Intro = () => {
+
+  useEffect(() => {
+
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.intro-panel-1',
+        start: 'top center',
+        end: "bottom center",
+        pin: true,
+        pinSpacing: false,
+        scrub: true,
+        markers: true,
+      }
+    })
+
+    tl.from('.intro-panel-1 .head-box', { opacity: 0, y: "-15%", })
+    .to('.intro-panel-1 .head-description', { opacity: 0, y: "-15%"}, "+=1")
+    .to('.intro-panel-1 .head-title', { opacity: 0, y: "-10%"})
+
+    return () => {};
+  }, []);
+
+  useEffect(() => {
+
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.intro-panel-2',
+        start: 'top center',
+        end: "bottom center",
+        pin: true,
+        pinSpacing: false,
+        scrub: true,
+        markers: true,
+      }
+    })
+
+    tl.from('.intro-panel-2 .head-box', { opacity: 0, y: "-15%", })
+    .to('.intro-panel-2 .head-description', { opacity: 0, y: "-20%"}, "+=1")
+    .to('.intro-panel-2 .head-subtitle', { opacity: 0, y: "-10%"})
+
+    return () => {};
+  }, []);
+
   return (
     <section className="intro">
 
       <div className="blurred left"></div>
       <div className="blurred right"></div>
 
-      <div className="panel container">
+      <div className="panel container intro-panel-1">
 
         <div className="head-box">
           <div className="head-title">¿qué es WaterLight?</div>
@@ -23,7 +71,7 @@ const Intro = () => {
         
       </div>
 
-      <div className="panel container">
+      <div className="panel container intro-panel-2">
 
         <div className="head-box box-right head-bordered">
           <div className="head-subtitle">Energía limpia y renovable</div>

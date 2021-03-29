@@ -20,9 +20,9 @@
 
   &::before {
     content: "";
-    @include absolute($top: 0, $left: 0, $bottom: 0);
+    @include absolute($top: 0, $left: -5px, $bottom: 0);
     width: 5px;
-    transform: scaleY(.5);
+    transform: scaleY(0);
     transform-origin: center top;
     background-color: white;
   }
