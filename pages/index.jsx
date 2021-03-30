@@ -10,8 +10,13 @@ import Product from '../components/sections/product'
 const HomePage = () => {
   return (
     <main>
-      <Welcome />
-      <Intro />
+      <div className="award">
+        <Welcome />
+        <Intro />
+        <div className="award-background">
+          <img src="/images/intro-background.png" alt="waterlight" width="1920" height="1080" />
+        </div>
+      </div>
       <Solution />
       <Showcase />
       <Experience />

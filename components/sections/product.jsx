@@ -9,7 +9,7 @@ const Product = () => {
           <span>Revolución Energética</span>
         </div>
         <div className="product-media">
-          <img src="https://images.unsplash.com/photo-1615826324871-a2b88293dde2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&ixlib=rb-1.2.1&q=80&w=1280" alt=""/>
+          <img src="https://images.unsplash.com/photo-1616792204859-147174a6e2e9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
         </div>
         <div className="product-actions">
           <a href="#" className="btn btn-secondary">Únete aquí a WATERLIGHT</a>

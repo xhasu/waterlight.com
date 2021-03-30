@@ -18,12 +18,6 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   // @include basehold();
-
-  background-image: url('/images/background.png');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
 }
 
 p {
@@ -118,6 +112,8 @@ main {
 section {
   position: relative;
   min-height: 100vh;
+
+  @include mark(white);
 }
 
 .container {

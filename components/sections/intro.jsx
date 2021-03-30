@@ -9,44 +9,35 @@ const Intro = () => {
 
   useEffect(() => {
 
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.intro-panel-1',
-        start: 'top center',
-        end: "bottom center",
-        pin: true,
-        pinSpacing: false,
-        scrub: true,
-        markers: true,
-      }
-    })
+    const boxes = document.querySelectorAll('.intro .panel.container');
 
-    tl.from('.intro-panel-1 .head-box', { opacity: 0, y: "-15%", })
-    .to('.intro-panel-1 .head-description', { opacity: 0, y: "-15%"}, "+=1")
-    .to('.intro-panel-1 .head-title', { opacity: 0, y: "-10%"})
+    const createTimeline = (element, index) => {
 
-    return () => {};
-  }, []);
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: element,
+          start: 'top center',
+          end: "bottom center",
+          pin: true,
+          pinSpacing: false,
+          scrub: true,
+          markers: true,
+        }
+      })
 
-  useEffect(() => {
+      let headBox = element.querySelector('.head-box');
 
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.intro-panel-2',
-        start: 'top center',
-        end: "bottom center",
-        pin: true,
-        pinSpacing: false,
-        scrub: true,
-        markers: true,
-      }
-    })
+      tl.from(headBox, { opacity: 0, y: "-15%", })
+        .to(element.querySelectorAll('.head-description'),
+          { opacity: 0, y: "-15%" }, "+=1")
+        .to(element.querySelectorAll('.head-title, .head-subtitle'),
+          { opacity: 0, y: "-10%" })
 
-    tl.from('.intro-panel-2 .head-box', { opacity: 0, y: "-15%", })
-    .to('.intro-panel-2 .head-description', { opacity: 0, y: "-20%"}, "+=1")
-    .to('.intro-panel-2 .head-subtitle', { opacity: 0, y: "-10%"})
+    };
 
-    return () => {};
+    boxes.forEach(createTimeline);
+
+    return () => { };
   }, []);
 
   return (
@@ -55,9 +46,9 @@ const Intro = () => {
       <div className="blurred left"></div>
       <div className="blurred right"></div>
 
-      <div className="panel container intro-panel-1">
+      <div className="panel container">
 
-        <div className="head-box">
+        <div className="head-box box-left">
           <div className="head-title">¿qué es WaterLight?</div>
           <div className="head-description">
             <p className="lead">
@@ -68,10 +59,10 @@ const Intro = () => {
             </p>
           </div>
         </div>
-        
+
       </div>
 
-      <div className="panel container intro-panel-2">
+      <div className="panel container">
 
         <div className="head-box box-right head-bordered">
           <div className="head-subtitle">Energía limpia y renovable</div>
@@ -90,7 +81,7 @@ const Intro = () => {
           <div className="head-subtitle mb-2">Cuándo y dónde sea</div>
           <div className="head-description">
             <p className="lead">
-              Iluminación 24/7 en cualquier lugar. 
+              Iluminación 24/7 en cualquier lugar.
             </p>
           </div>
         </div>
@@ -98,17 +89,20 @@ const Intro = () => {
       </div>
 
       <div className="panel container">
+
         <div className="head-box box-right head-bordered">
           <div className="head-subtitle">Batería recargable</div>
           <div className="head-description">
             <p className="lead">
-              Para dispositivos móviles y alimentación de electrodomésticos. 
+              Para dispositivos móviles y alimentación de electrodomésticos.
             </p>
           </div>
         </div>
+
       </div>
 
       <div className="panel container">
+
         <div className="head-box box-left head-bordered">
           <div className="head-subtitle mb-2">Facilmente adaptable</div>
           <div className="head-description">
