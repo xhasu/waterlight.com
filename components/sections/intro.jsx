@@ -27,11 +27,11 @@ const Intro = () => {
 
       let headBox = element.querySelector('.head-box');
 
-      tl.from(headBox, { opacity: 0, y: "-15%", })
+      tl.from(headBox, { opacity: 0, y: '-5%', })
         .to(element.querySelectorAll('.head-description'),
-          { opacity: 0, y: "-15%" }, "+=1")
+          { opacity: 0, y: '-15%' }, '+=1')
         .to(element.querySelectorAll('.head-title, .head-subtitle'),
-          { opacity: 0, y: "-10%" })
+          { opacity: 0, y: '-10%' })
 
     };
 

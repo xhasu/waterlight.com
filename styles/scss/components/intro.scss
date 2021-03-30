@@ -11,10 +11,9 @@
     z-index: -1;
     
     img {
+      @include absolute($bottom: 0, $left: 0, $right: 0);
       @include img-cover();
       height: 100vh;
-      width: 100vw;
-      transform: translateY(-100%);
     }
   }
 }
@@ -24,10 +23,18 @@
   margin-top: 30vh;
   
   &-background {
-    @include absolute($top: 0, $left: 0, $right: 0, $bottom: 0);
+
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 0;
     z-index: -1;
+
     img {
+      @include absolute($top: 0, $left: 0, $right: 0);
       @include img-cover();
+      height: 100vh;
     }
   }
 }
