@@ -33,6 +33,21 @@
     }
   }
 
+  &.dark {
+
+    .header-brand {
+      filter: invert(1);
+    }
+    
+    li {
+      color: black;
+
+      span::after {
+        background: black;
+      }
+    }
+  }
+
   &-links {
     line-height: 1;
     flex: 1;
@@ -74,6 +89,7 @@
         display: inline-block;
         vertical-align: middle;
         cursor: pointer;
+
         &:after {
           display: none;
           content: "";

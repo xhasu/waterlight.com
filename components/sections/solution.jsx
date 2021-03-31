@@ -17,15 +17,14 @@ const Solution = () => {
         pin: true,
         pinSpacing: false,
         scrub: true,
-        markers: true,
+        // markers: true,
       }
     })
 
     tlsh.from('.solution-head .head-info', {opacity: 0, y: '-10%'})
       .from('.solution-background', {opacity: 0})
       .to('.solution-head .head-info', {opacity: 0, y: '-5%'}, '+=2')
-      .to('.solution-background img', {y: '-15%'})
-      .to('.solution-background', {opacity: 0})
+      .to('.solution-background img', {opacity: 0, y: '-15%'})
 
     let tlsb = gsap.timeline({
       scrollTrigger: {
@@ -33,9 +32,9 @@ const Solution = () => {
         start: 'top center',
         end: 'bottom top',
         pin: true,
-        // pinSpacing: false,
+        pinSpacing: true,
         scrub: true,
-        markers: true,
+        // markers: true,
       }
     })
 
@@ -57,14 +56,25 @@ const Solution = () => {
         start: 'top center',
         end: 'bottom center',
         pin: true,
+        pinSpacing: true,
+        // pinType: 'transform',
         scrub: true,
-        markers: true,
+        // markers: true,
       }
     })
-
+    
     tlsbox.from('.solution-box .head-title', {opacity: 0, y: '-5%'})
       .from('.solution-box .head-description p', { opacity: 0, stagger: 0.5 })
+    
 
+    ScrollTrigger.create({
+      trigger: '.experience',
+      start: 'top top',
+      end: 'bottom top',
+      toggleClass: { targets: 'header.header', className: 'dark' },
+      scrub: true,
+      markers: true,
+    })
     
     return () => {}
   }, [])

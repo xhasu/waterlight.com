@@ -1,16 +1,17 @@
-.award {
+.solution {
   position: relative;
-
+  
   &-background {
+
     position: -webkit-sticky;
     position: sticky;
-    bottom: 0;
+    top: 0;
     width: 100%;
     height: 0;
     z-index: -1;
-    
+
     img {
-      @include absolute($bottom: 0, $left: 0, $right: 0);
+      @include absolute($top: 0, $left: 0, $right: 0);
       @include img-cover();
       height: 100vh;
     }

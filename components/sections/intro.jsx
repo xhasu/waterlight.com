@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
@@ -21,7 +20,7 @@ const Intro = () => {
           pin: true,
           pinSpacing: false,
           scrub: true,
-          markers: true,
+          // markers: true,
         }
       })
 
