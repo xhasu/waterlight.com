@@ -12,7 +12,7 @@ const Product = () => {
           <img src="https://images.unsplash.com/photo-1616792204859-147174a6e2e9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
         </div>
         <div className="product-actions">
-          <a href="#" className="btn btn-secondary">Únete aquí a WATERLIGHT</a>
+          <a href="#" className="btn btn-secondary">Preordena aquí</a>
         </div>
       </div>
     </section>

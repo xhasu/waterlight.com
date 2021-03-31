@@ -102,6 +102,10 @@ small {
   position: relative;
   padding-top: 60px;
   min-height: calc(100vh - 60px);
+  @include below($laptop) {
+    padding-top: 0;
+    min-height: 100vh;
+  }
 }
 
 main {
@@ -112,8 +116,9 @@ main {
 section {
   position: relative;
   min-height: 100vh;
-
-  @include mark(white);
+  @include below($tablet) {
+    min-height: 640px;
+  }
 }
 
 .container {

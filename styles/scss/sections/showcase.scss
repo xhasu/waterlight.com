@@ -8,16 +8,29 @@
   &-title {
     margin-top: 110px;
     margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 50px;
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 6px;
+    @include below($tablet) {
+      font-size: 25px;
+      max-width: 270px;
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
   }
 
   &-video {
     position: relative;
     margin-bottom: 90px;
+
+    @include below($tablet) {
+      margin-bottom: 40px;
+    }
+
     img {
       @include img-fluid();
     }
@@ -28,8 +41,14 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
+    font-weight: 500;
     letter-spacing: 5px;
     cursor: pointer;
+
+    @include below($tablet) {
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
 
     span {
       position: relative;

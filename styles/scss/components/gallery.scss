@@ -23,15 +23,31 @@
     margin-bottom: 6px;
     font-size: 50px;
     line-height: 1;
+    letter-spacing: 6px;
+    @include below($laptop) {
+      font-size: 40px;
+    }
+    @include below($tablet) {
+      font-size: 30px;
+      display: none;
+    }
   }
   &-subtitle {
     font-size: 32px;
     line-height: 1;
+    letter-spacing: 4px;
+    @include below($laptop) {
+      font-size: 25px;
+    }
   }
   &-content {
+    position: relative;
     flex: 1;
     height: 100%;
     height: calc(100% - 168px - 110px);
+    @include below($tablet) {
+      height: calc(100% - 105px);
+    }
   }
   &-swiper {
     height: 100%;
@@ -39,8 +55,50 @@
   &-slide {
     position: relative;
     img {
-      @include img-contain();
+      // @include img-contain();
+      @include img-cover();
     }
+  }
+
+  &-arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 0;
+    z-index: 100;
+
+    @include below($tablet) {
+      top: auto;
+      bottom: 20px;
+    }
+
+    img {
+      @include img-responsive();
+      cursor: pointer;
+    }
+
+    .arrow-prev {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    .arrow-next {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    .arrow-prev,
+    .arrow-next {
+      @include below($tablet) {
+        width: 120px;
+        transform: none;
+      }
+    }
+    
   }
 
   &-mini {
@@ -53,6 +111,12 @@
     padding-bottom: 20px;
     user-select: none;
     box-sizing: border-box;
+
+    @include below($tablet) {
+      .swiper-container {
+        display: none;
+      }
+    }
 
     .mini-item {
       position: relative;

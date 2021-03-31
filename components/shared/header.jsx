@@ -87,7 +87,7 @@ const Header = () => {
                 </ul>
               </motion.div>
               <div className="nav-actions">
-                <a href="#" className="btn btn-secondary">Únete aquí a WATERLIGHT</a>
+                <a href="#" className="btn btn-secondary">Preordena aquí</a>
               </div>
             </div>
             <motion.div

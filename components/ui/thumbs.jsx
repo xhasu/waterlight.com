@@ -6,7 +6,7 @@ const Thumbs = () => {
   return (
     <div className="thumbs">
       <div className="thumbs-container">
-        <Swiper freeMode={true} slidesPerView="auto" spaceBetween={15} loop={true} centeredSlides={true} grabCursor={true} threshold={30}>
+        <Swiper freeMode={true} slidesPerView="auto" breakpoints={{768: {spaceBetween: 15}}} spaceBetween={5} loop={true} grabCursor={true} threshold={30}>
           <SwiperSlide className="thumb-item">
             <img src="https://images.unsplash.com/photo-1615570640471-c3be64198dcb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=262&ixlib=rb-1.2.1&q=80&w=368" alt="" />
           </SwiperSlide>
@@ -23,7 +23,7 @@ const Thumbs = () => {
             <img src="https://images.unsplash.com/photo-1614958708511-3fa50b0bdd8f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=262&ixlib=rb-1.2.1&q=80&w=368" alt="" />
           </SwiperSlide>
         </Swiper>
-        <Swiper initialSlide={0} freeMode={true} slidesPerView="auto" spaceBetween={15} loop={true} grabCursor={true} slidesOffsetBefore={-184}>
+        <Swiper initialSlide={0} freeMode={true} slidesPerView="auto" breakpoints={{768: {spaceBetween: 15}}} spaceBetween={5} loop={true} grabCursor={true} slidesOffsetBefore={-184}>
           <SwiperSlide className="thumb-item">
             <img src="https://images.unsplash.com/photo-1615570640471-c3be64198dcb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=262&ixlib=rb-1.2.1&q=80&w=368" alt="" />
           </SwiperSlide>

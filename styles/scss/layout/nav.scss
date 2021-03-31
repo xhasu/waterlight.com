@@ -13,8 +13,12 @@
   background-position: center center;
   z-index: 100;
 
+  @include above($tablet) {
+    display: none;
+  }
+
   @include below($tablet) {
-    background-image: url('/images/background.png');
+    background-image: url('/images/intro-background.png');
   }
 
   .header-links {

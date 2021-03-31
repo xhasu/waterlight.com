@@ -3,12 +3,22 @@
   &-container {
     position: relative;
     margin-bottom: 90px;
+    @include below($tablet) {
+      margin-bottom: 30px;
+    }
   }
   .swiper-container {
     margin-bottom: 15px;
+    @include below($tablet) {
+      margin-bottom: 5px;
+    }
   }
   .swiper-slide {
     width: auto;
+
+    @include below($tablet) {
+      width: 160px;
+    }
   }
 }
 

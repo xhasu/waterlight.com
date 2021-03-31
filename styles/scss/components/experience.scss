@@ -3,7 +3,7 @@
   position: relative;
   padding-top: 180px;
   padding-bottom: 10px;
-  background-color: white;
+  background-color: whitesmoke;
   min-height: 100vh;
   box-sizing: border-box;
 
@@ -16,6 +16,14 @@
 
     &.compact {
       max-width: 280px;
+    }
+
+    .head-title {
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 300;
     }
 
     p.lead {
