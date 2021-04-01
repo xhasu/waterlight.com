@@ -1,15 +1,11 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { gsap } from 'gsap/dist/gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 import useBodyOverflow from '../../hooks/useBodyOverflow';
 import useTranslation from '../../hooks/useTranslation';
 import { LanguageContext } from '../../contexts/language-context';
 
 import Close from '../ui/close';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Header = () => {
 
@@ -19,24 +15,7 @@ const Header = () => {
   const { t } = useTranslation();
   const { toggleBodyOverflow } = useBodyOverflow();
 
-  useEffect(() => {
-
-    /*let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.experience',
-        start: 'top top',
-        end: 'bottom top',
-        // pin: true,
-        toggleClass: { targets: 'header.header', className: 'dark' },
-        scrub: true,
-        markers: true,
-      }
-    })*/
-
-    // tl.from('.experience .head-title.xl', {opacity: 0})
-    
-    return () => { }
-  }, [])
+  
 
   const changeLocale = (lang) => {
     setlocale(lang);

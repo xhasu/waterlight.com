@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
@@ -65,16 +64,6 @@ const Solution = () => {
     
     tlsbox.from('.solution-box .head-title', {opacity: 0, y: '-5%'})
       .from('.solution-box .head-description p', { opacity: 0, stagger: 0.5 })
-    
-
-    ScrollTrigger.create({
-      trigger: '.experience',
-      start: 'top top',
-      end: 'bottom top',
-      toggleClass: { targets: 'header.header', className: 'dark' },
-      scrub: true,
-      markers: true,
-    })
     
     return () => {}
   }, [])

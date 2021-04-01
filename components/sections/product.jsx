@@ -1,6 +1,36 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { gsap } from 'gsap/dist/gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Product = () => {
+
+  useEffect(() => {
+    
+    gsap.from('.product .product-slogan', {
+      scrollTrigger: {
+        trigger: '.product',
+        start: 'top center',
+      },
+      duration: 1.2,
+      opacity: 0,
+      y: "-25%",
+    })
+
+    gsap.from('.product .product-media', {
+      scrollTrigger: {
+        trigger: '.product',
+        start: 'top center',
+      },
+      delay: 1,
+      opacity: 0,
+      y: "-5%",
+    })
+
+    return () => { }
+  }, [])
+
   return (
     <section className="product">
       <div className="container">

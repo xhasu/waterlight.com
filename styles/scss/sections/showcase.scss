@@ -55,16 +55,6 @@
       position: relative;
       display: inline-block;
       margin: 0 auto;
-
-      &::after {
-        content: "";
-        position: absolute;
-        height: 1px;
-        right: 0;
-        left: 0;
-        bottom: -4px;
-        background: white;
-      }
     }
   }
 }

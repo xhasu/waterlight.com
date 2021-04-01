@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Autoplay, Navigation, Thumbs } from 'swiper'
@@ -8,6 +8,15 @@ SwiperCore.use([Autoplay, Navigation, Thumbs]);
 const Gallery = () => {
 
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const ref = useRef(null);
+
+  const goPrev = () => {
+    ref.current.swiper.slidePrev();
+  };
+
+  const goNext = () => {
+    ref.current.swiper.slideNext();
+  };
 
   return (
     <div className="gallery">
@@ -19,7 +28,7 @@ const Gallery = () => {
 
       <div className="gallery-content">
 
-        <Swiper className="gallery-swiper" loop={true} threshold={30} thumbs={{swiper: thumbsSwiper}}>
+        <Swiper className="gallery-swiper" ref={ref} loop={true} threshold={30} thumbs={{swiper: thumbsSwiper}}>
           <SwiperSlide className="gallery-slide">
             <img src="https://images.unsplash.com/photo-1614443042306-f01db45309a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
           </SwiperSlide>
@@ -53,10 +62,10 @@ const Gallery = () => {
         </Swiper>
 
         <div className="gallery-arrows">
-          <div className="arrow-prev">
+          <div className="arrow-prev" onClick={goPrev}>
             <img src="/images/icon-arrow-prev.png" alt="" width="147" height="157" />
           </div>
-          <div className="arrow-next">
+          <div className="arrow-next" onClick={goNext}>
             <img src="/images/icon-arrow-next.png" alt="" width="147" height="157" /> 
           </div>
         </div>

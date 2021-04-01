@@ -3,8 +3,6 @@ import React, { useContext } from 'react'
 import useTranslation from '../../hooks/useTranslation';
 import { LanguageContext } from '../../contexts/language-context';
 
-
-
 const Footer = () => {
 
   const [locale, setlocale] = useContext(LanguageContext);
@@ -13,6 +11,12 @@ const Footer = () => {
   const changeLocale = (lang) => {
     setlocale(lang);
   };
+
+  const copyClipboard = () => {
+    navigator.clipboard.writeText(window.location.href)
+      .then(text => {console.log(text)})
+      .catch(err =>  console.log(err));
+  }
 
   return (
     <footer className="footer">
@@ -42,17 +46,17 @@ const Footer = () => {
             </div>
 
             <div className="footer-share">
-              <div className="share-item">
-                <span><img src="/images/icon-instagram.png" alt="" width="42" height="42" /></span>
-              </div>
-              <div className="share-item">
-                <span><img src="/images/icon-linkedin.png" alt="" width="42" height="42" /></span>
-              </div>
-              <div className="share-item">
-                <span><img src="/images/icon-youtube.png" alt="" width="42" height="42" /></span>
-              </div>
-              <div className="share-item">
-                <span><img src="/images/icon-share.png" alt="" width="42" height="42" /></span>
+              <a className="share-item" href="https://www.instagram.com/" target='_blank' rel="noopener">
+                <span><img src="/images/icon-instagram.png" alt="instagram waterlight" width="42" height="42" /></span>
+              </a>
+              <a className="share-item" href="https://www.linkedin.com/" target='_blank' rel="noopener">
+                <span><img src="/images/icon-linkedin.png" alt="linkedin waterlight" width="42" height="42" /></span>
+              </a>
+              <a className="share-item" href="https://www.youtube.com/" target='_blank' rel="noopener">
+                <span><img src="/images/icon-youtube.png" alt="youtube waterlight" width="42" height="42" /></span>
+              </a>
+              <div className="share-item" onClick={copyClipboard} >
+                <span><img src="/images/icon-share.png" alt="share waterlight" width="42" height="42" /></span>
               </div>
             </div>
             
