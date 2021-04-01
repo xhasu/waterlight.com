@@ -50,10 +50,10 @@ const Intro = () => {
         <div className="head-box box-left">
           <div className="head-title">¿qué es WaterLight?</div>
           <div className="head-description">
-            <p className="lead">
+            <p className="lead font-town font-medium">
               Un dispositivo que crea energía eléctrica utilizando solo el agua de mar.
             </p>
-            <p className="opacity-9">
+            <p className="opacity-9 font-raleway font-regular">
               Esto, gracias a la ionización de un electrolito compuesto de agua salada, que convierte el aluminio de su interior en electricidad.
             </p>
           </div>

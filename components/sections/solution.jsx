@@ -31,7 +31,7 @@ const Solution = () => {
         start: 'top center',
         end: 'bottom top',
         pin: true,
-        pinSpacing: true,
+        pinSpacing: false,
         scrub: true,
         // markers: true,
       }
@@ -108,10 +108,10 @@ const Solution = () => {
         <div className="head-box">
           <div className="head-title">la solución</div>
           <div className="head-description">
-            <p className="lead">
+            <p className="lead font-town font-medium">
               Waterlight produce energía eléctrica a partir de un recurso natural renovable como el agua de mar. 
             </p>
-            <p>
+            <p className="opacity-9 font-raleway font-regular">
               Esto mejora la calidad de vida de las comunidades sin acceso a este recurso vital, ofreciendo una alternativa energética con el poder de suplir una gran demanda mientras se cuida el medio ambiente. 
             </p>
           </div>

@@ -13,7 +13,7 @@
   background-position: center center;
   z-index: 100;
 
-  @include above($tablet) {
+  @include above($tablet + 1) {
     display: none;
   }
 

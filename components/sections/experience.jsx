@@ -62,7 +62,7 @@ const Experience = () => {
         <div className="panel compact experience-intro">
           <div className="head-box expand">
             <div className="head-description">
-              <p className="lead">¿COMO FUNCIONA?</p>
+              <p className="lead font-regular">¿COMO FUNCIONA?</p>
             </div>
             <div className="head-title xl">Nace de algo natural y evoluciona en algo asombroso</div>
           </div>
