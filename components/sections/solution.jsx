@@ -31,7 +31,6 @@ const Solution = () => {
         start: 'top center',
         end: 'bottom top',
         pin: true,
-        pinSpacing: false,
         scrub: true,
         // markers: true,
       }

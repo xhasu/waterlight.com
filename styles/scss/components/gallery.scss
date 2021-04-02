@@ -13,15 +13,17 @@
   box-sizing: border-box;
 
   &-head {
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
     padding: 40px 0;
+    color: white;
+    font-family: 'Town 10 Display', 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
     box-sizing: border-box;
   }
   &-title {
     margin-bottom: 6px;
     font-size: 50px;
+    font-weight: 500;
     line-height: 1;
     letter-spacing: 6px;
     @include below($laptop) {
@@ -34,6 +36,7 @@
   }
   &-subtitle {
     font-size: 32px;
+    font-weight: 400;
     line-height: 1;
     letter-spacing: 4px;
     @include below($laptop) {

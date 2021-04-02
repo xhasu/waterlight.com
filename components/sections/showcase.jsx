@@ -35,7 +35,7 @@ const Showcase = () => {
       <Thumbs />
       <h3 className="showcase-show-gallery"
         onClick={handleVisible}>
-        <span>Ver toda la galeria</span>
+        <span>Ver galería</span>
       </h3>
       <AnimatePresence>
         {isVisible && (

@@ -17,6 +17,7 @@ const Intro = () => {
           trigger: element,
           start: 'top center',
           end: "bottom center",
+          toggleClass: { targets: element, className: 'animate' },
           pin: true,
           pinSpacing: false,
           scrub: true,
