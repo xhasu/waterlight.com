@@ -12,12 +12,12 @@ const Showcase = () => {
 
   const { toggleBodyOverflow } = useBodyOverflow();
 
-  const [isVisible, setVisible] = useState(false);
-  const enableFullScreenMode = true;
+  const [isGalleryVisible, setGalleryVisible] = useState(false);
+  const enableFullScreenMode = false;
 
-  const handleVisible = () => {
+  const handleGalleryVisible = () => {
 
-    setVisible(prev => {
+    setGalleryVisible(prev => {
       let value = !prev;
       toggleBodyOverflow();
       if (enableFullScreenMode && document.fullscreenEnabled) {
@@ -32,14 +32,15 @@ const Showcase = () => {
     <section className="showcase">
       <h2 className="showcase-title">WATERLIGHT en la Guajira</h2>
       <Video />
+      
       <Thumbs />
       <h3 className="showcase-show-gallery"
-        onClick={handleVisible}>
+        onClick={handleGalleryVisible}>
         <span>Ver galería</span>
       </h3>
       <AnimatePresence>
-        {isVisible && (
-          <Popup handleVisible={handleVisible}>
+        {isGalleryVisible && (
+          <Popup handleVisible={handleGalleryVisible}>
             <motion.div
               initial={{ opacity: .4 }}
               animate={{ opacity: 1 }}

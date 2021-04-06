@@ -41,7 +41,7 @@ const Intro = () => {
   }, []);
 
   return (
-    <section className="intro">
+    <section className="intro" id="intro">
 
       <div className="blurred left"></div>
       <div className="blurred right"></div>

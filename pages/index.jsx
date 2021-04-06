@@ -14,7 +14,7 @@ const HomePage = () => {
         <Welcome />
         <Intro />
         <div className="award-background">
-          <img src="/images/intro-background.png" alt="waterlight" width="1920" height="1080" />
+          <img src="/images/intro-background.jpg" alt="waterlight" width="1920" height="1080" />
         </div>
       </div>
       <Solution />

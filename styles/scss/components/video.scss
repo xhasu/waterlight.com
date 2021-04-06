@@ -1,0 +1,60 @@
+
+.video {
+  position: relative;
+  margin-bottom: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+
+
+  @include below($tablet) {
+    margin-bottom: 40px;
+  }
+
+  img,
+  video,
+  iframe {
+    @include img-fluid();
+    object-position: center;
+  }
+
+  &-title {
+    margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+    font-family: 'Town 10 Display', 'Raleway', sans-serif;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 6px;
+    text-align: center;
+    box-sizing: border-box;
+
+    @include below($desktop) {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      font-size: 40px;
+    }
+
+    @include below($tablet) {
+      max-width: 270px;
+      font-size: 25px;
+    }
+  }
+
+  .popup-box & {
+    position: relative;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 90px;
+    box-sizing: border-box;
+    @include below($desktop) {
+      padding: 0 45px;
+    }
+    @include below($tablet) {
+      padding: 0 20px;
+    }
+  }
+}

@@ -15,7 +15,7 @@ const Experience = () => {
       end: 'bottom top',
       toggleClass: { targets: 'header.header', className: 'dark' },
       scrub: true,
-      markers: true,
+      // markers: true,
       refreshPriority: -1
     })
 
@@ -25,8 +25,9 @@ const Experience = () => {
         start: 'top center',
         end: 'bottom center',
         pin: true,
+        // pinSpacing: false,
         scrub: true,
-        markers: true,
+        // markers: true,
       }
     })
 
@@ -44,7 +45,7 @@ const Experience = () => {
           end: 'bottom center',
           // pin: true,
           scrub: true,
-          markers: true,
+          // markers: true,
         }
       })
 
@@ -56,7 +57,7 @@ const Experience = () => {
   }, [])
 
   return (
-    <section className="experience">
+    <section className="experience" id="experience">
       <div className="container">
 
         <div className="panel compact experience-intro">

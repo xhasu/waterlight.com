@@ -117,7 +117,8 @@
 
     @include below($tablet) {
       .swiper-container {
-        display: none;
+        // display: none;
+        height: 0;
       }
     }
 

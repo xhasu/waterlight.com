@@ -28,19 +28,6 @@
     }
   }
 
-  &-video {
-    position: relative;
-    margin-bottom: 90px;
-
-    @include below($tablet) {
-      margin-bottom: 40px;
-    }
-
-    img {
-      @include img-fluid();
-    }
-  }
-
   &-show-gallery {
     text-align: center;
     text-transform: uppercase;

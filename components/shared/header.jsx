@@ -34,12 +34,14 @@ const Header = () => {
       <header className="header">
         <div className="header-container">
           <div className="header-brand">
-            <img src="/images/brand.png" alt="Waterlight" width="81" height="37" />
+            <a href="#welcome">
+              <img src="/images/brand.png" alt="Waterlight" width="81" height="37" />
+            </a>
           </div>
           <ul className="header-links">
-            <li>{t('header.what')}</li>
-            <li>{t('header.why')}</li>
-            <li>{t('header.how')}</li>
+            <li><a href="#intro">{t('header.what')}</a></li>
+            <li><a href="#solution">{t('header.why')}</a></li>
+            <li><a href="#experience">{t('header.how')}</a></li>
             <li>
               <span
                 className={`es-ES ${locale}`}
@@ -83,9 +85,9 @@ const Header = () => {
                 animate={{opacity: 1,x: 0}}
                 exit={{opacity: .4}}>
                 <ul className="header-links">
-                  <li>{t('header.what')}</li>
-                  <li>{t('header.why')}</li>
-                  <li>{t('header.how')}</li>
+                  <li onClick={changeShowMenu}><a href="#intro">{t('header.what')}</a></li>
+                  <li onClick={changeShowMenu}><a href="#solution">{t('header.why')}</a></li>
+                  <li onClick={changeShowMenu}><a href="#experience">{t('header.how')}</a></li>
                 </ul>
               </motion.div>
               <div className="nav-actions">

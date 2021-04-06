@@ -7,7 +7,6 @@
   align-items: stretch;
   min-height: 100vh;
 
-  // background-image: url('/images/background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -18,7 +17,7 @@
   }
 
   @include below($tablet) {
-    background-image: url('/images/intro-background.png');
+    background-image: url('/images/nav-background.jpg');
   }
 
   .header-links {
