@@ -71,7 +71,7 @@ const Solution = () => {
     <section className="solution" id="solution">
 
       <div className="solution-background">
-        <img src="/images/solution-background.jpg" alt="waterlight" width="1920" height="955" />
+        <img src="/images/solution-background-01.jpg" alt="waterlight" width="1920" height="955" />
       </div>
 
       <div className="panel container solution-head">

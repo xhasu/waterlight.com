@@ -123,8 +123,30 @@
     span {
       display: flex;
       width: 42px;
+      height: 42px;
       cursor: pointer;
       text-decoration: none;
+
+      justify-content: center;
+      align-items: center;
+      border: 1px solid white;
+      border-radius: 999px;
+      color: white;
+      
+
+      opacity: .4;
+      transition: opacity 400ms;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      svg {
+        display: block;
+        margin-bottom: 0;
+        color: currentColor;
+        fill: currentColor;
+      }
       img {
         @include img-fluid();
       }

@@ -14,7 +14,10 @@ const HomePage = () => {
         <Welcome />
         <Intro />
         <div className="award-background">
-          <img src="/images/intro-background.jpg" alt="waterlight" width="1920" height="1080" />
+          <picture>
+            <source media="(min-width: 768px)" srcSet="/images/intro-background.jpg"/>
+            <img src="/images/intro-background-tablet.jpg" alt="waterlight" width="960" height="1080" />
+          </picture>
         </div>
       </div>
       <Solution />

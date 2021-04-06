@@ -31,14 +31,18 @@
     cursor: pointer;
   }
   &-icon {
-    @include absolute($bottom: 15px, $left: 0, $right: 0);
+    @include absolute($bottom: 25px, $left: 0, $right: 0);
     margin-left: auto;
     margin-right: auto;
-    box-sizing: border-box;
     width: 30px;
     height: 20px;
-    background-color: white;
+    cursor: pointer;
+    box-sizing: border-box;
     z-index: 1;
+    img {
+      display: block;
+      margin-bottom: 0;
+    }
   }
 
   .popup-box {

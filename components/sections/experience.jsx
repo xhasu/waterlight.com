@@ -27,6 +27,7 @@ const Experience = () => {
         pin: true,
         // pinSpacing: false,
         scrub: true,
+        refreshPriority: -1,
         // markers: true,
       }
     })

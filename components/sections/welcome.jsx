@@ -32,7 +32,9 @@ const Welcome = () => {
         <div className="welcome-caption" onClick={handleVideoVisible}>
           Ver video
         </div>
-        <div className="welcome-icon"></div>
+        <div className="welcome-icon">
+          <img src="/images/icon-arrow-scroll.png" alt="Waterlight" width="30" height="20" />
+        </div>
       </div>
 
       {isVideoVisible && (
