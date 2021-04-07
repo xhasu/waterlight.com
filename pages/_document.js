@@ -12,7 +12,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           
-	        <link rel="icon" href="/favicon.ico?v=1.0.0" />
+	        <link rel="icon" href="/favicon.ico?v=2.0.0" />
 
           <link rel="stylesheet" href="/css/fonts.css"/>
       

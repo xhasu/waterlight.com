@@ -16,4 +16,16 @@
       height: 100vh;
     }
   }
+
+  &-decorate {
+    position: fixed;
+    top: 60vh;
+    transform: translate(0, -50%);
+    img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+  }
 }

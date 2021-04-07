@@ -18,6 +18,10 @@
   iframe {
     @include img-fluid();
     object-position: center;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &-title {

@@ -43,9 +43,10 @@ const Experience = () => {
         scrollTrigger: {
           trigger: item,
           start: 'top center',
-          end: 'bottom center',
+          end: 'bottom bottom',
           // pin: true,
           scrub: true,
+          refreshPriority: -1,
           // markers: true,
         }
       })
