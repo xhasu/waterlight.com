@@ -1,12 +1,15 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useEffect, useRef, useContext } from 'react'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Autoplay, Navigation, Thumbs } from 'swiper'
+
+import { GalleryContext } from '../../contexts/gallery-context'
 
 SwiperCore.use([Autoplay, Navigation, Thumbs]);
 
 const Gallery = () => {
 
+  const [position] = useContext(GalleryContext);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const ref = useRef(null);
 
@@ -17,6 +20,12 @@ const Gallery = () => {
   const goNext = () => {
     ref.current.swiper.slideNext();
   };
+
+  useEffect(() => {
+    console.log(position);
+    ref.current.swiper.slideToLoop(position);
+  }, [position])
+
 
   return (
     <div className="gallery">

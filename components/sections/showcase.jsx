@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-import useBodyOverflow from '../../hooks/useBodyOverflow';
+import { GalleryProvider } from '../../contexts/gallery-context'
+import useBodyOverflow from '../../hooks/useBodyOverflow'
 
 import Video from '../ui/video'
 import Thumbs from '../ui/thumbs'
@@ -33,23 +34,26 @@ const Showcase = () => {
       <h2 className="showcase-title">WATERLIGHT en la Guajira</h2>
       <Video />
       
-      <Thumbs />
-      <h3 className="showcase-show-gallery"
-        onClick={handleGalleryVisible}>
-        <span>Ver galería</span>
-      </h3>
-      <AnimatePresence>
-        {isGalleryVisible && (
-          <Popup handleVisible={handleGalleryVisible}>
-            <motion.div
-              initial={{ opacity: .4 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}>
-              <Gallery />
-            </motion.div>
-          </Popup>
-        )}
-      </AnimatePresence>
+      <GalleryProvider>
+        <Thumbs handleVisible={handleGalleryVisible} />
+        <h3 className="showcase-show-gallery"
+          onClick={handleGalleryVisible}>
+          <span>Ver galería</span>
+        </h3>
+        <AnimatePresence>
+          {isGalleryVisible && (
+            <Popup handleVisible={handleGalleryVisible}>
+              <motion.div
+                initial={{ opacity: .4 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}>
+                <Gallery />
+              </motion.div>
+            </Popup>
+          )}
+        </AnimatePresence>
+      </GalleryProvider>
+
     </section>
   )
 }
