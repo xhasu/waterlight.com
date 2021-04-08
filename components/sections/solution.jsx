@@ -91,6 +91,10 @@ const Solution = () => {
         <img src="/images/solution-background-02.jpg" alt="waterlight" width="1920" height="955" />
       </div>
 
+      <div className="solution-product">
+          <img src="/images/solution-product-01.png" alt=""/>
+        </div>
+
       <div className="panel container solution-head">
 
         <div className="head-info">
@@ -137,7 +141,7 @@ const Solution = () => {
           </div>
 
         </div>
-      
+
       </div>
 
       <div className="solution-decorate">

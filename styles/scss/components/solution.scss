@@ -21,6 +21,7 @@
     position: fixed;
     top: 60vh;
     transform: translate(0, -50%);
+    z-index: 1;
 
     @include below($tablet) {
       width: 80px;
@@ -28,6 +29,25 @@
 
     img {
       @include img-fluid();
+    }
+  }
+
+  &-product {
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 0;
+    pointer-events: none;
+    user-select: none;
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
+      margin-bottom: 0;
+      height: 100vh;
     }
   }
 }

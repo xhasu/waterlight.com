@@ -12,6 +12,7 @@ const Product = () => {
       scrollTrigger: {
         trigger: '.product',
         start: 'top center',
+        toggleActions: 'play reverse play reverse',
       },
       duration: 1.2,
       opacity: 0,
@@ -22,10 +23,12 @@ const Product = () => {
       scrollTrigger: {
         trigger: '.product',
         start: 'top center',
+        toggleActions: 'play reverse play reverse',
       },
       delay: 1,
       opacity: 0,
       y: "-5%",
+      scale: 0.5
     })
 
     return () => { }

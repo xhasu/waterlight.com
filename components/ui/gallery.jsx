@@ -39,34 +39,55 @@ const Gallery = () => {
 
         <Swiper className="gallery-swiper" ref={ref} loop={true} threshold={30} thumbs={{swiper: thumbsSwiper}}>
           <SwiperSlide className="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1614443042306-f01db45309a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
+            <img src="/images/gallery/01.jpg" alt="" width="1258" height="711" />
           </SwiperSlide>
           <SwiperSlide className="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1614443042306-f01db45309a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
+            <img src="/images/gallery/02.jpg" alt="" width="1258" height="711" />
           </SwiperSlide>
           <SwiperSlide className="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1614443042306-f01db45309a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
+            <img src="/images/gallery/03.jpg" alt="" width="1258" height="711" />
           </SwiperSlide>
           <SwiperSlide className="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1614443042306-f01db45309a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
+            <img src="/images/gallery/04.jpg" alt="" width="1258" height="711" />
           </SwiperSlide>
           <SwiperSlide className="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1614443042306-f01db45309a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
+            <img src="/images/gallery/05.jpg" alt="" width="1258" height="711" />
           </SwiperSlide>
           <SwiperSlide className="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1614443042306-f01db45309a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
+            <img src="/images/gallery/06.jpg" alt="" width="1258" height="711" />
           </SwiperSlide>
           <SwiperSlide className="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1614443042306-f01db45309a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
+            <img src="/images/gallery/07.jpg" alt="" width="1258" height="711" />
           </SwiperSlide>
           <SwiperSlide className="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1614443042306-f01db45309a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
+            <img src="/images/gallery/08.jpg" alt="" width="1258" height="711" />
           </SwiperSlide>
           <SwiperSlide className="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1614443042306-f01db45309a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
+            <img src="/images/gallery/09.jpg" alt="" width="1258" height="711" />
           </SwiperSlide>
           <SwiperSlide className="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1614443042306-f01db45309a9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
+            <img src="/images/gallery/10.jpg" alt="" width="1258" height="711" />
+          </SwiperSlide>
+          <SwiperSlide className="gallery-slide">
+            <img src="/images/gallery/11.jpg" alt="" width="1258" height="711" />
+          </SwiperSlide>
+          <SwiperSlide className="gallery-slide">
+            <img src="/images/gallery/12.jpg" alt="" width="1258" height="711" />
+          </SwiperSlide>
+          <SwiperSlide className="gallery-slide">
+            <img src="/images/gallery/13.jpg" alt="" width="1258" height="711" />
+          </SwiperSlide>
+          <SwiperSlide className="gallery-slide">
+            <img src="/images/gallery/14.jpg" alt="" width="1258" height="711" />
+          </SwiperSlide>
+          <SwiperSlide className="gallery-slide">
+            <img src="/images/gallery/15.jpg" alt="" width="1258" height="711" />
+          </SwiperSlide>
+          <SwiperSlide className="gallery-slide">
+            <img src="/images/gallery/16.jpg" alt="" width="1258" height="711" />
+          </SwiperSlide>
+          <SwiperSlide className="gallery-slide">
+            <img src="/images/gallery/17.jpg" alt="" width="1258" height="711" />
           </SwiperSlide>
         </Swiper>
 
@@ -88,36 +109,57 @@ const Gallery = () => {
       </div>
 
       <div className="gallery-mini">
-        <Swiper slidesPerView="auto" slideToClickedSlide={true} spaceBetween={5} loop={true} grabCursor={true} centeredSlides={true} onSwiper={setThumbsSwiper} watchSlidesVisibility watchSlidesProgress>
+        <Swiper loop={true} centeredSlides={true} slidesPerView="auto" slideToClickedSlide={true} spaceBetween={5} grabCursor={true} threshold={20} onSwiper={setThumbsSwiper} watchSlidesVisibility watchSlidesProgress>
           <SwiperSlide className="mini-item">
-            <img src="https://images.unsplash.com/photo-1615212886093-b3ad2e57f916?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=86&ixlib=rb-1.2.1&q=80&w=120" alt=""/>
+            <img src="/images/gallery/thumbs/01.jpg" alt="" width="122" height="86" />
           </SwiperSlide>
           <SwiperSlide className="mini-item">
-            <img src="https://images.unsplash.com/photo-1615955507523-4ff7d2f73409?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=86&ixlib=rb-1.2.1&q=80&w=120" alt=""/>
+            <img src="/images/gallery/thumbs/02.jpg" alt="" width="122" height="86" />
           </SwiperSlide>
           <SwiperSlide className="mini-item">
-            <img src="https://images.unsplash.com/photo-1614827141334-732badfbf72c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=86&ixlib=rb-1.2.1&q=80&w=120" alt=""/>
+            <img src="/images/gallery/thumbs/03.jpg" alt="" width="122" height="86" />
           </SwiperSlide>
           <SwiperSlide className="mini-item">
-            <img src="https://images.unsplash.com/photo-1615835624350-48c2a516aa98?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=86&ixlib=rb-1.2.1&q=80&w=120" alt=""/>
+            <img src="/images/gallery/thumbs/04.jpg" alt="" width="122" height="86" />
           </SwiperSlide>
           <SwiperSlide className="mini-item">
-            <img src="https://images.unsplash.com/photo-1614461517447-88e1344bc6ff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=86&ixlib=rb-1.2.1&q=80&w=120" alt=""/>
+            <img src="/images/gallery/thumbs/05.jpg" alt="" width="122" height="86" />
           </SwiperSlide>
           <SwiperSlide className="mini-item">
-            <img src="https://images.unsplash.com/photo-1614543917159-fa54ac2511fe?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=86&ixlib=rb-1.2.1&q=80&w=120" alt=""/>
+            <img src="/images/gallery/thumbs/06.jpg" alt="" width="122" height="86" />
           </SwiperSlide>
           <SwiperSlide className="mini-item">
-            <img src="https://images.unsplash.com/photo-1616276509233-c10cd06ac2f5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=86&ixlib=rb-1.2.1&q=80&w=120" alt=""/>
+            <img src="/images/gallery/thumbs/07.jpg" alt="" width="122" height="86" />
           </SwiperSlide>
           <SwiperSlide className="mini-item">
-            <img src="https://images.unsplash.com/photo-1614431262189-4739dd82ed24?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=86&ixlib=rb-1.2.1&q=80&w=120" alt=""/>
+            <img src="/images/gallery/thumbs/08.jpg" alt="" width="122" height="86" />
           </SwiperSlide>
           <SwiperSlide className="mini-item">
-            <img src="https://images.unsplash.com/photo-1616072396315-ee2cdebf3098?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=86&ixlib=rb-1.2.1&q=80&w=120" alt=""/>
+            <img src="/images/gallery/thumbs/09.jpg" alt="" width="122" height="86" />
           </SwiperSlide>
           <SwiperSlide className="mini-item">
-            <img src="https://images.unsplash.com/photo-1614935361809-db7fbca257d3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=86&ixlib=rb-1.2.1&q=80&w=120" alt=""/>
+            <img src="/images/gallery/thumbs/10.jpg" alt="" width="122" height="86" />
+          </SwiperSlide>
+          <SwiperSlide className="mini-item">
+            <img src="/images/gallery/thumbs/11.jpg" alt="" width="122" height="86" />
+          </SwiperSlide>
+          <SwiperSlide className="mini-item">
+            <img src="/images/gallery/thumbs/12.jpg" alt="" width="122" height="86" />
+          </SwiperSlide>
+          <SwiperSlide className="mini-item">
+            <img src="/images/gallery/thumbs/13.jpg" alt="" width="122" height="86" />
+          </SwiperSlide>
+          <SwiperSlide className="mini-item">
+            <img src="/images/gallery/thumbs/14.jpg" alt="" width="122" height="86" />
+          </SwiperSlide>
+          <SwiperSlide className="mini-item">
+            <img src="/images/gallery/thumbs/15.jpg" alt="" width="122" height="86" />
+          </SwiperSlide>
+          <SwiperSlide className="mini-item">
+            <img src="/images/gallery/thumbs/16.jpg" alt="" width="122" height="86" />
+          </SwiperSlide>
+          <SwiperSlide className="mini-item">
+            <img src="/images/gallery/thumbs/17.jpg" alt="" width="122" height="86" />
           </SwiperSlide>
         </Swiper>
       </div>
