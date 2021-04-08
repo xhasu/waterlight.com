@@ -12,6 +12,11 @@
   user-select: none;
   pointer-events: none;
 
+  @include below($desktop) {
+    opacity: .4;
+    width: 320px;
+  }
+
   @include below($tablet) {
     display: none;
   }

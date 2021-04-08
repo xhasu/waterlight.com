@@ -72,10 +72,16 @@ const Gallery = () => {
 
         <div className="gallery-arrows">
           <div className="arrow-prev" onClick={goPrev}>
-            <img src="/images/icon-arrow-prev.png" alt="" width="147" height="157" />
+            <picture>
+              <source media="(max-width: 768px)" srcSet="/images/icon-prev-xs.png"/>
+              <img src="/images/icon-prev.png" alt="" width="147" height="157" />
+            </picture>
           </div>
           <div className="arrow-next" onClick={goNext}>
-            <img src="/images/icon-arrow-next.png" alt="" width="147" height="157" /> 
+            <picture>
+              <source media="(max-width: 768px)" srcSet="/images/icon-next-xs.png"/>
+              <img src="/images/icon-next.png" alt="" width="147" height="157" /> 
+            </picture>
           </div>
         </div>
 

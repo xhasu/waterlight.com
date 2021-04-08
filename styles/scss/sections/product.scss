@@ -26,12 +26,53 @@
   &-media {
     position: relative;
     margin-bottom: 16px;
+
+    @include below($tablet) {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
     img {
       @include img-fluid();
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 150px;
+      background: transparent;
+      background: linear-gradient(0deg, transparent, black);
+
+      @include below($tablet) {
+        height: 60px;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      pointer-events: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 150px;
+      background: transparent;
+      background: linear-gradient(180deg, transparent, black);
+
+      @include below($tablet) {
+        height: 60px;
+      }
     }
   }
 
   &-actions {
     text-align: center;
   }
+  
 }

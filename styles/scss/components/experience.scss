@@ -12,6 +12,11 @@
 
     &.expand {
       max-width: 820px;
+      @include below($tablet) {
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     &.compact {
@@ -21,10 +26,22 @@
     p {
       font-size: 20px;
       font-weight: 300;
+      @include below($tablet) {
+        font-size: 15px;
+      }
     }
 
     p.lead {
       margin-bottom: 10px;
+      @include below($tablet) {
+        font-size: 15px;
+      }
+    }
+
+    @include below($tablet) {
+      .head-subtitle {
+        font-size: 20px;
+      }
     }
   }
 }

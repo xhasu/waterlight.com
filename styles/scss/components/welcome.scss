@@ -29,6 +29,9 @@
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+    @include below($tablet) {
+      font-size: 15px;
+    }
   }
   &-icon {
     @include absolute($bottom: 25px, $left: 0, $right: 0);

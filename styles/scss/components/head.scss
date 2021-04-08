@@ -3,6 +3,7 @@
   width: 100%;
   max-width: 410px;
   box-sizing: border-box;
+
   &.box-left {
     margin-left: 0;
     margin-right: auto;
@@ -10,6 +11,16 @@
   &.box-right {
     margin-right: 0;
     margin-left: auto;
+  }
+
+  @include below($tablet) {
+    text-align: center;
+    &,
+    &.box-right ,
+    &.box-left {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
@@ -19,12 +30,16 @@
   border-left: 5px solid transparent;
 
   &::before {
+    display: none;
     content: "";
     @include absolute($top: 0, $left: -5px, $bottom: 0);
     width: 5px;
     transform: scaleY(0);
     transform-origin: center top;
     background-color: white;
+    @include above($tablet + 1) {
+      display: block;
+    }
   }
   
   .animate &::before {
@@ -36,6 +51,14 @@
 .head-info {
   width: 100%;
   max-width: 620px;
+
+  @include below($tablet) {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
   .head-subtitle.lead {
     margin-bottom: 30px;
   }
@@ -44,6 +67,9 @@
     margin-bottom: 22px;
     font-size: 20px;
     text-transform: uppercase;
+    @include below($tablet) {
+      max-width: none;
+    }
   }
 }
 
@@ -55,10 +81,19 @@
   line-height: 1.2;
   letter-spacing: 6px;
   text-transform: uppercase;
+
+  @include below($tablet) {
+    font-size: 25px;
+  }
+
   &.lead {
     margin-bottom: 0;
     font-size: 60px;
     letter-spacing: 8px;
+    @include below($tablet) {
+      font-size: 30px;
+      text-align: center;
+    }
   }
   &.xl {
     margin-bottom: 0;
@@ -67,6 +102,10 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     letter-spacing: 4px;
+    @include below($tablet) {
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
   }
 }
 
@@ -76,11 +115,21 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 1.2;
+  letter-spacing: 4px;
   text-transform: uppercase;
+
+  @include below($tablet) {
+    font-size: 24px;
+  }
+
   &.lead {
     font-size: 30px;
     letter-spacing: 4px;
     margin-bottom: 0;
+    @include below($tablet) {
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
   }
 }
 
@@ -92,9 +141,15 @@
     font-weight: 300;
     font-size: 15px;
     letter-spacing: 2px;
+    @include below($tablet) {
+      font-size: 12px;
+    }
   }
   p.lead {
     font-size: 18px;
     text-transform: uppercase;
+    @include below($tablet) {
+      font-size: 13px;
+    }
   }  
 }

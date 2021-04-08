@@ -39,7 +39,10 @@ const Product = () => {
           <span>Revolución Energética</span>
         </div>
         <div className="product-media">
-          <img src="https://images.unsplash.com/photo-1616792204859-147174a6e2e9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920" alt=""/>
+          <picture>
+            <source media="(min-width: 640px)" srcSet="/images/product-composition.jpg"/>
+            <img src="/images/product-composition-xs.jpg" alt="" width="1274" height="797" />
+          </picture>
         </div>
         <div className="product-actions">
           <a href="#" className="btn btn-secondary">Preordena aquí</a>

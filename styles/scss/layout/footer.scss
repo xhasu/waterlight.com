@@ -122,8 +122,8 @@
     
     span {
       display: flex;
-      width: 42px;
-      height: 42px;
+      width: 40px;
+      height: 40px;
       cursor: pointer;
       text-decoration: none;
 
@@ -132,6 +132,7 @@
       border: 1px solid white;
       border-radius: 999px;
       color: white;
+      overflow: hidden;
       
 
       opacity: .4;

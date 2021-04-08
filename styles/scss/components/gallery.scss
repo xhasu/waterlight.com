@@ -73,7 +73,7 @@
 
     @include below($tablet) {
       top: auto;
-      bottom: 20px;
+      bottom: -15px;
     }
 
     img {
@@ -97,7 +97,7 @@
     .arrow-prev,
     .arrow-next {
       @include below($tablet) {
-        width: 120px;
+        width: 20px;
         transform: none;
       }
     }

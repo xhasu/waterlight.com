@@ -21,11 +21,13 @@
     position: fixed;
     top: 60vh;
     transform: translate(0, -50%);
+
+    @include below($tablet) {
+      width: 80px;
+    }
+
     img {
-      display: block;
-      width: auto;
-      max-width: 100%;
-      margin-bottom: 0;
+      @include img-fluid();
     }
   }
 }
