@@ -2,6 +2,7 @@ export const Lang = {
   es: {
     appname: 'Waterlight ES',
     title: 'Waterlight',
+    cta: 'Preordena aquí',
     header: {
       what: '¿Qué es Waterlight?',
       why: '¿Por Qué Waterlight?',
@@ -44,11 +45,48 @@ export const Lang = {
         description1: 'Waterlight produce energía eléctrica a partir de un recurso natural renovable como el agua salada.',
         description2: 'Esto mejora la calidad de vida de las comunidades sin acceso a este recurso vital, ofreciendo una alternativa energética con el poder de suplir una gran demanda mientras se cuida el medio ambiente.'
       }
+    },
+    showcase: {
+      title: 'WATERLIGHT en La Guajira',
+      gallery: 'Ver galería'
+    },
+    experience: {
+      subtitle: '¿COMO FUNCIONA?',
+      title: 'Nace de algo natural y evoluciona en algo asombroso',
+      stage1: {
+        title: 'CONEXIÓN ANCESTRAL',
+        text: 'Diseño inspirado en la comunidad Wayuú y su conexión ancestral con el mar.',
+      },
+      stage2: {
+        title: 'TRADICIÓN',
+        text: 'Correa tejida con figuras Kanas, artesanías milenarias Wayuú.',
+      },
+      stage3: {
+        title: 'RECICLABLE',
+        text: 'Ensamblado con materiales 100 % reciclables',
+      },
+      stage4: {
+        title: 'WATERPROOF',
+        text: 'Resistente al agua exterior.',
+      },
+      stage5: {
+        title: 'CONEXIÓN ANCESTRAL',
+        text: 'Superficie antileslizante.',
+      },
+    },
+    product: {
+      title: 'Tú haces parte de esta',
+      subtitle: 'Revolución Energética'
+    },
+    footer: {
+      copyright: 'todos los derechos reservados',
+      tyc: 'Aviso Legal',
     }
   },
   en: {
     appname: 'Waterlight EN',
     title: 'Waterlight',
+    cta: 'Preorder here',
     header: {
       what: 'What is Waterlight?',
       why: 'Why Waterlight?',
@@ -91,6 +129,42 @@ export const Lang = {
         description1: 'www',
         description2: 'www'
       }
+    },
+    showcase: {
+      title: 'WATERLIGHT in La Guajira',
+      gallery: 'Gallery'
+    },
+    experience: {
+      subtitle: 'www',
+      title: 'www',
+      stage1: {
+        title: 'www',
+        text: 'www',
+      },
+      stage2: {
+        title: 'www',
+        text: 'www',
+      },
+      stage3: {
+        title: 'www',
+        text: 'www',
+      },
+      stage4: {
+        title: 'www',
+        text: 'www',
+      },
+      stage5: {
+        title: 'www',
+        text: 'www',
+      },
+    },
+    product: {
+      title: 'You are part of this',
+      subtitle: 'Energetic Revolution'
+    },
+    footer: {
+      copyright: 'All rights reserved',
+      tyc: 'Legal notices',
     }
   }
 };

@@ -2,9 +2,13 @@ import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
+import useTranslation from '../../hooks/useTranslation';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Product = () => {
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     
@@ -38,8 +42,8 @@ const Product = () => {
     <section className="product">
       <div className="container">
         <div className="product-slogan">
-          Tú haces parte de esta <br />
-          <span>Revolución Energética</span>
+          {t('product.title')} <br />
+          <span>{t('product.subtitle')}</span>
         </div>
         <div className="product-media">
           <picture>
@@ -48,7 +52,7 @@ const Product = () => {
           </picture>
         </div>
         <div className="product-actions">
-          <a href="#" className="btn btn-secondary">Preordena aquí</a>
+          <a href="#" className="btn btn-secondary">{t('cta')}</a>
         </div>
       </div>
     </section>

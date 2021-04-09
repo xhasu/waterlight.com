@@ -69,10 +69,10 @@ const Footer = () => {
 
         <div className="footer-info">
           <div>
-            <span>{+new Date().getFullYear()} Waterlight, todos los derechos reservados</span>
+            <span>{+new Date().getFullYear()} Waterlight, {t('footer.copyright')}</span>
           </div>
           <div>
-            <a href="#"><span>Aviso Legal</span></a>
+            <a href="#"><span>{t('footer.tyc')}</span></a>
             &nbsp; | &nbsp;
             <a href="#"><span>Cookies</span></a>
           </div>

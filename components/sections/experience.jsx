@@ -2,9 +2,13 @@ import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
+import useTranslation from '../../hooks/useTranslation';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
+
+  const { t } = useTranslation();
 
   useEffect(() => {
 
@@ -64,44 +68,44 @@ const Experience = () => {
         <div className="panel compact experience-intro">
           <div className="head-box expand">
             <div className="head-description">
-              <p className="lead font-regular">¿COMO FUNCIONA?</p>
+              <p className="lead font-regular">{t('experience.subtitle')}</p>
             </div>
-            <div className="head-title xl">Nace de algo natural y evoluciona en algo asombroso</div>
+            <div className="head-title xl">{t('experience.title')}</div>
           </div>
         </div>
 
         <div className="panel compact">
           <div className="head-box box-right compact">
-            <div className="head-subtitle">CONEXIÓN ANCESTRAL</div>
-            <p>Diseño inspirado en la comunidad Wayuú y su conexión ancestral con el mar.</p>
+            <div className="head-subtitle">{t('experience.stage1.title')}</div>
+            <p>{t('experience.stage1.text')}</p>
           </div>
         </div>
 
         <div className="panel compact">
           <div className="head-box box-right compact">
-            <div className="head-subtitle">TRADICIÓN</div>
-            <p>Correa tejida con figuras Kanas, artesanías milenarias Wayuú.</p>
+            <div className="head-subtitle">{t('experience.stage2.title')}</div>
+            <p>{t('experience.stage2.text')}</p>
           </div>
         </div>
 
         <div className="panel compact">
           <div className="head-box box-right compact">
-            <div className="head-subtitle">RECICLABLE</div>
-            <p>Ensamblado con materiales 100 % reciclables</p>
+            <div className="head-subtitle">{t('experience.stage3.title')}</div>
+            <p>{t('experience.stage3.text')}</p>
           </div>
         </div>
 
         <div className="panel compact">
           <div className="head-box box-right compact">
-            <div className="head-subtitle">WATERPROOF</div>
-            <p>Resistente al agua exterior.</p>
+            <div className="head-subtitle">{t('experience.stage4.title')}</div>
+            <p>{t('experience.stage4.text')}</p>
           </div>
         </div>
 
         <div className="panel compact">
           <div className="head-box box-right compact">
-            <div className="head-subtitle">CONEXIÓN ANCESTRAL</div>
-            <p>Superficie antileslizante.</p>
+            <div className="head-subtitle">{t('experience.stage5.title')}</div>
+            <p>{t('experience.stage5.text')}</p>
           </div>
         </div>
 

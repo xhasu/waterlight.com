@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 import { GalleryProvider } from '../../contexts/gallery-context'
+import useTranslation from '../../hooks/useTranslation';
 import useBodyOverflow from '../../hooks/useBodyOverflow'
 
 import Video from '../ui/video'
@@ -11,6 +12,7 @@ import Gallery from '../ui/gallery'
 
 const Showcase = () => {
 
+  const { t } = useTranslation();
   const { toggleBodyOverflow } = useBodyOverflow();
 
   const [isGalleryVisible, setGalleryVisible] = useState(false);
@@ -31,14 +33,14 @@ const Showcase = () => {
 
   return (
     <section className="showcase">
-      <h2 className="showcase-title">WATERLIGHT en la Guajira</h2>
+      <h2 className="showcase-title">{t('showcase.title')}</h2>
       <Video />
       
       <GalleryProvider>
         <Thumbs handleVisible={handleGalleryVisible} />
         <h3 className="showcase-show-gallery"
           onClick={handleGalleryVisible}>
-          <span>Ver galería</span>
+          <span>{t('showcase.gallery')}</span>
         </h3>
         <AnimatePresence>
           {isGalleryVisible && (

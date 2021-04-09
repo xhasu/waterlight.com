@@ -40,7 +40,7 @@ const Welcome = () => {
 
       {isVideoVisible && (
         <Popup handleVisible={handleVideoVisible}>
-          <div className="video-title">Waterlight en la guajira</div>
+          <div className="video-title">{t('showcase.title')}</div>
           <Video />
         </Popup>
       )}
