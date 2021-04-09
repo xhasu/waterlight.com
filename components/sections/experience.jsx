@@ -80,7 +80,7 @@ const Experience = () => {
         <div className="panel compact">
           <div className="head-box box-right compact">
             <div className="head-subtitle">TRADICIÓN</div>
-            <p>Correa tejida con figuras Kanas, artesanías milenarias Wayú.</p>
+            <p>Correa tejida con figuras Kanas, artesanías milenarias Wayuú.</p>
           </div>
         </div>
 

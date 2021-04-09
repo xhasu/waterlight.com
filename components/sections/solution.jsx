@@ -114,13 +114,13 @@ const Solution = () => {
               </p>
             </div>
             <div className="head-subtitle lead">
-              cerca de 1.5 billones de personas no cuentan con acceso a energía eléctrica.
+              Cerca de 1.5 billones de personas no cuentan con acceso a energía eléctrica.
             </div>
             <div className="head-subtitle lead">
-              de acuerdo a las Naciones Unidas, se espera que para el 2035 la demanda de electricidad aumente un 70%.
+              Cerca de 1.5 billones de personas no cuentan con acceso a energía eléctrica.
             </div>
             <div className="head-subtitle lead">
-              se estima que las reservas de combustibles fósiles se agoten en los próximos 52 años.
+              Se estima que las reservas de combustibles fósiles se agoten en los próximos 52 años.
             </div>
           </div>
 
@@ -129,13 +129,13 @@ const Solution = () => {
         <div className="panel container solution-box">
 
           <div className="head-box">
-            <div className="head-title">la solución</div>
+            <div className="head-title">La solución</div>
             <div className="head-description">
               <p className="lead font-town font-medium">
-                Waterlight produce energía eléctrica a partir de un recurso natural renovable como el agua de mar. 
+                Waterlight produce energía eléctrica a partir de un recurso natural renovable como el agua salada.
               </p>
               <p className="opacity-9 font-raleway font-regular">
-                Esto mejora la calidad de vida de las comunidades sin acceso a este recurso vital, ofreciendo una alternativa energética con el poder de suplir una gran demanda mientras se cuida el medio ambiente. 
+                Esto mejora la calidad de vida de las comunidades sin acceso a este recurso vital, ofreciendo una alternativa energética con el poder de suplir una gran demanda mientras se cuida el medio ambiente.
               </p>
             </div>
           </div>

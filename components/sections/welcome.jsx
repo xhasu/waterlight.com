@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 
 import useBodyOverflow from '../../hooks/useBodyOverflow';
+import useTranslation from '../../hooks/useTranslation';
 
 import Video from '../ui/video'
 import Popup from '../layouts/popup'
@@ -9,6 +9,7 @@ import Popup from '../layouts/popup'
 
 const Welcome = () => {
 
+  const { t } = useTranslation();
   const { toggleBodyOverflow } = useBodyOverflow();
 
   const [isVideoVisible, setVideoVisible] = useState(false);
@@ -30,7 +31,7 @@ const Welcome = () => {
           <img src="/images/welcome-logo.png" alt="Waterlight" width="493" height="300" />
         </div>
         <div className="welcome-caption" onClick={handleVideoVisible}>
-          Ver video
+          {t('welcome.video')}
         </div>
         <div className="welcome-icon">
           <img src="/images/icon-arrow-scroll.png" alt="Waterlight" width="30" height="20" />

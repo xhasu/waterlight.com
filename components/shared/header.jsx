@@ -15,8 +15,6 @@ const Header = () => {
   const { t } = useTranslation();
   const { toggleBodyOverflow } = useBodyOverflow();
 
-  
-
   const changeLocale = (lang) => {
     setlocale(lang);
   };

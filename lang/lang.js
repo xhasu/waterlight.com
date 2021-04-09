@@ -6,6 +6,16 @@ export const Lang = {
       what: '¿Qué es Waterlight?',
       why: '¿Por Qué Waterlight?',
       how: '¿Cómo funciona?',
+    },
+    welcome: {
+      video: 'Ver video'
+    },
+    intro: {
+      stage1: {
+        title: "¿Qué es ",
+        text1: "Un dispositivo que crea energía eléctrica utilizando solo el agua salada.",
+        text2: "Esto, gracias a la ionización de un electrolito compuesto de agua salada, que convierte el aluminio de su interior en electricidad."
+      }
     }
   },
   en: {
@@ -14,7 +24,17 @@ export const Lang = {
     header: {
       what: 'What is Waterlight?',
       why: 'Why Waterlight?',
-      how: 'How to work?',
+      how: 'How it works?',
+    },
+    welcome: {
+      video: 'Play video'
+    },
+    intro: {
+      stage1: {
+        title: "What is ",
+        text1: "--",
+        text2: "--"
+      }
     }
   }
 };

@@ -39,12 +39,6 @@ const Gallery = () => {
 
         <Swiper className="gallery-swiper" ref={ref} loop={true} threshold={30} thumbs={{swiper: thumbsSwiper}}>
           <SwiperSlide className="gallery-slide">
-            <img src="/images/gallery/01.jpg" alt="" width="1258" height="711" />
-          </SwiperSlide>
-          <SwiperSlide className="gallery-slide">
-            <img src="/images/gallery/02.jpg" alt="" width="1258" height="711" />
-          </SwiperSlide>
-          <SwiperSlide className="gallery-slide">
             <img src="/images/gallery/03.jpg" alt="" width="1258" height="711" />
           </SwiperSlide>
           <SwiperSlide className="gallery-slide">
@@ -110,12 +104,6 @@ const Gallery = () => {
 
       <div className="gallery-mini">
         <Swiper loop={true} centeredSlides={true} slidesPerView="auto" slideToClickedSlide={true} spaceBetween={5} grabCursor={true} threshold={20} onSwiper={setThumbsSwiper} watchSlidesVisibility watchSlidesProgress>
-          <SwiperSlide className="mini-item">
-            <img src="/images/gallery/thumbs/01.jpg" alt="" width="122" height="86" />
-          </SwiperSlide>
-          <SwiperSlide className="mini-item">
-            <img src="/images/gallery/thumbs/02.jpg" alt="" width="122" height="86" />
-          </SwiperSlide>
           <SwiperSlide className="mini-item">
             <img src="/images/gallery/thumbs/03.jpg" alt="" width="122" height="86" />
           </SwiperSlide>

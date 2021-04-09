@@ -2,9 +2,13 @@ import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
+import useTranslation from '../../hooks/useTranslation';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Intro = () => {
+
+  const { t } = useTranslation();
 
   useEffect(() => {
 
@@ -49,13 +53,13 @@ const Intro = () => {
       <div className="panel container">
 
         <div className="head-box box-left head-box-intro">
-          <div className="head-title">¿qué es <br/>WaterLight?</div>
+          <div className="head-title">{t('intro.stage1.title')} <br/>WaterLight?</div>
           <div className="head-description">
             <p className="lead font-town font-medium">
-              Un dispositivo que crea energía eléctrica utilizando solo el agua de mar.
+              {t('intro.stage1.text1')}
             </p>
             <p className="opacity-9 font-raleway font-regular">
-              Esto, gracias a la ionización de un electrolito compuesto de agua salada, que convierte el aluminio de su interior en electricidad.
+              {t('intro.stage1.text2')}
             </p>
           </div>
         </div>
@@ -68,7 +72,7 @@ const Intro = () => {
           <div className="head-subtitle">Energía limpia y renovable</div>
           <div className="head-description">
             <p className="lead">
-              Hasta por 45 días con tan solo medio litro de agua*.
+              hasta por 45 días con tan solo medio litro de agua.
             </p>
           </div>
         </div>
@@ -81,7 +85,7 @@ const Intro = () => {
           <div className="head-subtitle mb-2">Cuándo y dónde sea</div>
           <div className="head-description">
             <p className="lead">
-              Iluminación 24/7 en cualquier lugar.
+              Iluminación 24/7 en cualquier lugar. 
             </p>
           </div>
         </div>
@@ -94,7 +98,7 @@ const Intro = () => {
           <div className="head-subtitle">Batería recargable</div>
           <div className="head-description">
             <p className="lead">
-              Para dispositivos móviles y alimentación de electrodomésticos.
+              Para dispositivos móviles y electrónicos.
             </p>
           </div>
         </div>
@@ -107,7 +111,7 @@ const Intro = () => {
           <div className="head-subtitle mb-2">Facilmente adaptable</div>
           <div className="head-description">
             <p className="lead">
-              A cualquier canoa para mejorar el proceso de pesca.
+              Adaptable a cualquier canoa para mejorar el proceso de pesca.
             </p>
           </div>
         </div>
