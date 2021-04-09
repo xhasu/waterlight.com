@@ -23,7 +23,7 @@ const Intro = () => {
           end: "bottom center",
           toggleClass: { targets: element, className: 'animate' },
           pin: true,
-          pinSpacing: false,
+          pinSpacing: true,
           scrub: true,
           // markers: true,
         }
@@ -69,10 +69,10 @@ const Intro = () => {
       <div className="panel container">
 
         <div className="head-box box-right head-bordered">
-          <div className="head-subtitle">Energía limpia y renovable</div>
+          <div className="head-subtitle">{t('intro.stage2.title')}</div>
           <div className="head-description">
             <p className="lead">
-              hasta por 45 días con tan solo medio litro de agua.
+              {t('intro.stage2.text')}
             </p>
           </div>
         </div>
@@ -82,10 +82,10 @@ const Intro = () => {
       <div className="panel container">
 
         <div className="head-box box-left head-bordered">
-          <div className="head-subtitle mb-2">Cuándo y dónde sea</div>
+          <div className="head-subtitle mb-2">{t('intro.stage3.title')}</div>
           <div className="head-description">
             <p className="lead">
-              Iluminación 24/7 en cualquier lugar. 
+              {t('intro.stage3.text')} 
             </p>
           </div>
         </div>
@@ -95,10 +95,10 @@ const Intro = () => {
       <div className="panel container">
 
         <div className="head-box box-right head-bordered">
-          <div className="head-subtitle">Batería recargable</div>
+          <div className="head-subtitle">{t('intro.stage4.title')}</div>
           <div className="head-description">
             <p className="lead">
-              Para dispositivos móviles y electrónicos.
+              {t('intro.stage4.text')}
             </p>
           </div>
         </div>
@@ -108,10 +108,10 @@ const Intro = () => {
       <div className="panel container">
 
         <div className="head-box box-left head-bordered">
-          <div className="head-subtitle mb-2">Facilmente adaptable</div>
+          <div className="head-subtitle mb-2">{t('intro.stage5.title')}</div>
           <div className="head-description">
             <p className="lead">
-              Adaptable a cualquier canoa para mejorar el proceso de pesca.
+              {t('intro.stage5.text')}
             </p>
           </div>
         </div>

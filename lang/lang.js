@@ -12,9 +12,37 @@ export const Lang = {
     },
     intro: {
       stage1: {
-        title: "¿Qué es ",
-        text1: "Un dispositivo que crea energía eléctrica utilizando solo el agua salada.",
-        text2: "Esto, gracias a la ionización de un electrolito compuesto de agua salada, que convierte el aluminio de su interior en electricidad."
+        title: '¿Qué es ',
+        text1: 'Un dispositivo que crea energía eléctrica utilizando solo el agua salada.',
+        text2: 'Esto, gracias a la ionización de un electrolito compuesto de agua salada, que convierte el aluminio de su interior en electricidad.'
+      },
+      stage2: {
+        title: 'Energía limpia y renovable',
+        text: 'hasta por 45 días con tan solo medio litro de agua.',
+      },
+      stage3: {
+        title: 'Cuándo y dónde sea',
+        text: 'Iluminación 24/7 en cualquier lugar. ',
+      },
+      stage4: {
+        title: 'Batería recargable',
+        text: 'Para dispositivos móviles y electrónicos.',
+      },
+      stage5: {
+        title: 'Facilmente adaptable',
+        text: 'Adaptable a cualquier canoa para mejorar el proceso de pesca.',
+      }
+    },
+    solution: {
+      title: '¿Por qué ',
+      subtitle: 'El mundo necesita una revolución de energía limpia porque',
+      text1: 'Cerca de 1.5 billones de personas no cuentan con acceso a energía eléctrica.',
+      text2: 'de acuerdo a las Naciones Unidas, se espera que para el 2035 la demanda de electricidad aumente un 70%.',
+      text3: 'Se estima que las reservas de combustibles fósiles se agoten en los próximos 52 años.',
+      info : {
+        headline: 'La solución',
+        description1: 'Waterlight produce energía eléctrica a partir de un recurso natural renovable como el agua salada.',
+        description2: 'Esto mejora la calidad de vida de las comunidades sin acceso a este recurso vital, ofreciendo una alternativa energética con el poder de suplir una gran demanda mientras se cuida el medio ambiente.'
       }
     }
   },
@@ -31,9 +59,37 @@ export const Lang = {
     },
     intro: {
       stage1: {
-        title: "What is ",
-        text1: "--",
-        text2: "--"
+        title: 'What is ',
+        text1: 'www',
+        text2: 'www'
+      },
+      stage2: {
+        title: 'www',
+        text: 'www',
+      },
+      stage3: {
+        title: 'www',
+        text: 'www',
+      },
+      stage4: {
+        title: 'www',
+        text: 'www',
+      },
+      stage5: {
+        title: 'www',
+        text: 'www',
+      }
+    },
+    solution: {
+      title: 'Why ',
+      subtitle: 'www',
+      text1: 'www',
+      text2: 'www',
+      text3: 'www',
+      info : {
+        headline: 'www',
+        description1: 'www',
+        description2: 'www'
       }
     }
   }

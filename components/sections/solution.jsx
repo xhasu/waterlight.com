@@ -2,9 +2,13 @@ import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
+import useTranslation from '../../hooks/useTranslation';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Solution = () => {
+
+  const { t } = useTranslation();
 
   useEffect(() => {
 
@@ -98,7 +102,7 @@ const Solution = () => {
       <div className="panel container solution-head">
 
         <div className="head-info">
-          <div className="head-title lead">¿Por qué <br/> Waterlight?</div>
+          <div className="head-title lead">{t('solution.title')} <br/> Waterlight?</div>
         </div>
 
       </div>
@@ -110,18 +114,12 @@ const Solution = () => {
           <div className="head-info">
             <div className="head-description">
               <p className="lead">
-                El mundo necesita una revolución de energía limpia porque
+                {t('solution.subtitle')}
               </p>
             </div>
-            <div className="head-subtitle lead">
-              Cerca de 1.5 billones de personas no cuentan con acceso a energía eléctrica.
-            </div>
-            <div className="head-subtitle lead">
-              Cerca de 1.5 billones de personas no cuentan con acceso a energía eléctrica.
-            </div>
-            <div className="head-subtitle lead">
-              Se estima que las reservas de combustibles fósiles se agoten en los próximos 52 años.
-            </div>
+            <div className="head-subtitle lead"> {t('solution.text1')} </div>
+            <div className="head-subtitle lead"> {t('solution.text2')} </div>
+            <div className="head-subtitle lead"> {t('solution.text3')} </div>
           </div>
 
         </div>
@@ -129,13 +127,13 @@ const Solution = () => {
         <div className="panel container solution-box">
 
           <div className="head-box">
-            <div className="head-title">La solución</div>
+            <div className="head-title">{t('solution.info.headline')}</div>
             <div className="head-description">
               <p className="lead font-town font-medium">
-                Waterlight produce energía eléctrica a partir de un recurso natural renovable como el agua salada.
+                {t('solution.info.description1')}
               </p>
               <p className="opacity-9 font-raleway font-regular">
-                Esto mejora la calidad de vida de las comunidades sin acceso a este recurso vital, ofreciendo una alternativa energética con el poder de suplir una gran demanda mientras se cuida el medio ambiente.
+                {t('solution.info.description2')}
               </p>
             </div>
           </div>
