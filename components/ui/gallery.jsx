@@ -22,7 +22,6 @@ const Gallery = () => {
   };
 
   useEffect(() => {
-    console.log(position);
     ref.current.swiper.slideToLoop(position);
   }, [position])
 

@@ -2,25 +2,20 @@
 
 .panel {
   position: relative;
-  // min-height: 120vh;
-  min-height: 90vh;
+  min-height: 120vh;
+  // min-height: 90vh;
   box-sizing: border-box;
   z-index: 1;
-
-  // display: flex;
-  // align-items: center;
 
   // @include mark();
 
   .head-box {
     flex: none;
-    // @include mark();
   }
 
   &.compact {
     min-height: 40vh;
   }
-
   
 }
 

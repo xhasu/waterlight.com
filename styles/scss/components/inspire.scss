@@ -1,0 +1,119 @@
+.inspire {
+  position: relative;
+  margin-top: 20vh;
+  z-index: 1;
+
+  &-sticky-before ,
+  &-sticky-after {
+    position: sticky;
+    position: -webkit-sticky;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10;
+
+    &::before ,
+    &::after {
+      position: relative;
+      display: block;
+      user-select: none;
+      pointer-events: none;
+      width: 100%;
+      height: 320px;
+    }
+    &::before {
+      background-image: linear-gradient(0deg, rgba(black, 0), black);
+  
+    }
+    &::after {
+      background-image: linear-gradient(-180deg, rgba(black, 0), black);
+    }
+  }
+
+  &-sticky-before {
+    top: 0;
+    &::before {
+      content: "";
+    }
+  }
+  &-sticky-after {
+    bottom: 0;
+    &::after {
+      bottom: 320px;
+      content: "";
+    }
+  }
+
+  &-head {
+    top: 300px;
+    min-height: 60vh;
+  }
+
+  &-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 1920px 1080px;
+    background-attachment: fixed;
+
+    &.bg-01 {
+      background-image: url('/images/inspire-background-01.jpg');
+      @include below($laptop) {
+        background-image: url('/images/inspire-background-01-tablet.jpg');
+      }
+    }
+
+    &.bg-02 {
+      background-image: url('/images/inspire-background-02.jpg');
+      @include below($laptop) {
+        background-image: url('/images/inspire-background-02-tablet.jpg');
+      }
+    }
+
+    @include below($laptop) {
+      background-size: 100% auto;
+    }
+  }
+
+  &-decorate {
+    position: fixed;
+    top: 60vh;
+    transform: translate(0, -50%);
+    z-index: 1;
+
+    @include below($tablet) {
+      width: 80px;
+    }
+
+    img {
+      @include img-fluid();
+    }
+  }
+
+  &-product {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    user-select: none;
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
+      margin-bottom: 0;
+      height: 100vh;
+    }
+  }
+}

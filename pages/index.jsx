@@ -3,6 +3,7 @@ import React from 'react'
 import Welcome from '../components/sections/welcome'
 import Sequence from '../components/sections/sequence'
 import Intro from '../components/sections/intro'
+import Inspire from '../components/sections/inspire'
 import Solution from '../components/sections/solution'
 import Showcase from '../components/sections/showcase'
 import Experience from '../components/sections/experience'
@@ -23,10 +24,11 @@ const HomePage = () => {
           </picture>
         </div>
 
-        <Sequence />
+        {/* <Sequence /> */}
 
       </div>
 
+      <Inspire />
       <Solution />
       <Showcase />
       <Experience />

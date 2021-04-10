@@ -38,7 +38,7 @@ const Header = () => {
           </div>
           <ul className="header-links">
             <li><a href="#intro">{t('header.what')}</a></li>
-            <li><a href="#solution">{t('header.why')}</a></li>
+            <li><a href="#inspire">{t('header.why')}</a></li>
             <li><a href="#experience">{t('header.how')}</a></li>
             <li>
               <span
@@ -84,7 +84,7 @@ const Header = () => {
                 exit={{opacity: .4}}>
                 <ul className="header-links">
                   <li onClick={changeShowMenu}><a href="#intro">{t('header.what')}</a></li>
-                  <li onClick={changeShowMenu}><a href="#solution">{t('header.why')}</a></li>
+                  <li onClick={changeShowMenu}><a href="#inspire">{t('header.why')}</a></li>
                   <li onClick={changeShowMenu}><a href="#experience">{t('header.how')}</a></li>
                 </ul>
               </motion.div>

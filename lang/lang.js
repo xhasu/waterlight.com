@@ -34,17 +34,17 @@ export const Lang = {
         text: 'Adaptable a cualquier canoa para mejorar el proceso de pesca.',
       }
     },
-    solution: {
+    inspire: {
       title: '¿Por qué ',
       subtitle: 'El mundo necesita una revolución de energía limpia porque',
       text1: 'Cerca de 1.5 billones de personas no cuentan con acceso a energía eléctrica.',
       text2: 'de acuerdo a las Naciones Unidas, se espera que para el 2035 la demanda de electricidad aumente un 70%.',
       text3: 'Se estima que las reservas de combustibles fósiles se agoten en los próximos 52 años.',
-      info : {
-        headline: 'La solución',
-        description1: 'Waterlight produce energía eléctrica a partir de un recurso natural renovable como el agua salada.',
-        description2: 'Esto mejora la calidad de vida de las comunidades sin acceso a este recurso vital, ofreciendo una alternativa energética con el poder de suplir una gran demanda mientras se cuida el medio ambiente.'
-      }
+    },
+    solution: {
+      headline: 'La solución',
+      description1: 'Waterlight produce energía eléctrica a partir de un recurso natural renovable como el agua salada.',
+      description2: 'Esto mejora la calidad de vida de las comunidades sin acceso a este recurso vital, ofreciendo una alternativa energética con el poder de suplir una gran demanda mientras se cuida el medio ambiente.'
     },
     showcase: {
       title: 'WATERLIGHT en La Guajira',
@@ -98,64 +98,64 @@ export const Lang = {
     intro: {
       stage1: {
         title: 'What is ',
-        text1: 'www',
-        text2: 'www'
+        text1: 'A device that provides electrical power using only salt-water.',
+        text2: 'This thanks to the ionization of an electrolyte made up of saltwater that transforms the aluminum on the inside into electrical energy.'
       },
       stage2: {
-        title: 'www',
-        text: 'www',
+        title: 'Clean and renewable energy',
+        text: 'For up to 45 days with just half a liter of salt water.',
       },
       stage3: {
-        title: 'www',
-        text: 'www',
+        title: 'Whenever and wherever',
+        text: 'lighting available 24/7 in any location',
       },
       stage4: {
-        title: 'www',
-        text: 'www',
+        title: 'Rechargeable battery',
+        text: 'for mobile and electronic devices',
       },
       stage5: {
-        title: 'www',
-        text: 'www',
+        title: 'Easily adaptable ',
+        text: 'to any canoe to improve the fishing process.',
       }
     },
-    solution: {
+    inpire: {
       title: 'Why ',
-      subtitle: 'www',
-      text1: 'www',
-      text2: 'www',
-      text3: 'www',
-      info : {
-        headline: 'www',
-        description1: 'www',
-        description2: 'www'
-      }
+      subtitle: 'THE WORLD NEEDS A CLEAN ENERGY REVOLUTION BECAUSE ',
+      text1: 'About 1.5 billion people have no access to electricity',
+      text2: 'According to the United Nations, electricity demand is expected to increase by 70% by 2035.',
+      text3: 'It\'s estimated that fossil fuel reserves will be depleted in the next 52 years.',
+    },
+    solution : {
+      headline: 'The solution',
+      description1: 'Waterlight produces electricity from a renewable natural resource as salt water.',
+      description2: 'This improves the quality of life of communities without access to this vital resource, offering an energy alternative with the power to supply a large demand while caring for the environment.'
     },
     showcase: {
       title: 'WATERLIGHT in La Guajira',
       gallery: 'Gallery'
     },
     experience: {
-      subtitle: 'www',
-      title: 'www',
+      subtitle: 'HOW IT WORKS?',
+      title: 'Born from something natural and evolves into something astonishing',
       stage1: {
-        title: 'www',
-        text: 'www',
+        title: 'ANCESTRAL CONNECTION',
+        text: 'The design is inspired by the Colombian Wayúu community and their ancestral connection with the sea.',
       },
       stage2: {
-        title: 'www',
-        text: 'www',
+        title: 'TRADITION',
+        text: 'Strap knitted with kanas figures, millenary Wayúu handicrafts',
       },
       stage3: {
-        title: 'www',
-        text: 'www',
+        title: 'RECYCLABLE',
+        text: 'Assembled with 100% recyclable materials.',
       },
       stage4: {
-        title: 'www',
-        text: 'www',
+        title: 'WATERPROOF',
+        text: 'outdoor water resistant',
       },
       stage5: {
-        title: 'www',
-        text: 'www',
+        title: 'ERGONOMIC',
+        text: 'non-slip surface',
       },
     },
     product: {

@@ -26,7 +26,7 @@ const Thumbs = ({handleVisible}) => {
           <SwiperSlide className="thumb-item" onClick={() => {handleClick(10)}}>
             <img src="/images/gallery/preview/13.jpg" alt="" width="368" height="262" />
           </SwiperSlide>
-          <SwiperSlide className="thumb-item" onClick={() => {handleClick(2)}}>
+          <SwiperSlide className="thumb-item" onClick={() => {handleClick(3)}}>
             <img src="/images/gallery/preview/06.jpg" alt="" width="368" height="262" />
           </SwiperSlide>
           <SwiperSlide className="thumb-item" onClick={() => {handleClick(12)}}>

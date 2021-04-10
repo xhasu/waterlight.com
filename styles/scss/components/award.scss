@@ -45,13 +45,13 @@
     right: auto;
     margin-right: auto;
     background: transparent;
-    background-image: linear-gradient(-90deg, rgba(black, 0), black);
+    background-image: linear-gradient(-90deg, transparent, black);
   }
   &::after {
     right: 0;
     left: auto;
     margin-left: auto;
     background-image: transparent;
-    background-image: linear-gradient(90deg, rgba(black, 0), black);
+    background-image: linear-gradient(90deg, transparent, black);
   }
 }
