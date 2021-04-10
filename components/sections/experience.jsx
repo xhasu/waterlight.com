@@ -36,7 +36,7 @@ const Experience = () => {
     })
 
     tl.from('.experience-intro .head-description', {opacity: 0})
-      .from('.experience-intro .head-title.xl', {opacity: 0, y: '-15%'})
+      .from('.experience-intro .head-title.xl', {opacity: 0, y: '15%'})
 
     let boxes = document.querySelectorAll('.experience .head-box.compact');
 

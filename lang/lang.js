@@ -55,11 +55,11 @@ export const Lang = {
       title: 'Nace de algo natural y evoluciona en algo asombroso',
       stage1: {
         title: 'CONEXIÓN ANCESTRAL',
-        text: 'Diseño inspirado en la comunidad Wayuú y su conexión ancestral con el mar.',
+        text: 'Diseño inspirado en la comunidad colombiana Wayúu y su conexión ancestral con el mar.',
       },
       stage2: {
         title: 'TRADICIÓN',
-        text: 'Correa tejida con figuras Kanas, artesanías milenarias Wayuú.',
+        text: 'Correa tejida con figuras Kanas, artesanías milenarias Wayúu.',
       },
       stage3: {
         title: 'RECICLABLE',

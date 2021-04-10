@@ -8,7 +8,11 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  // z-index: 1;
+  // z-index: 5;
+
+  .container {
+    z-index: 1;
+  }
 
   &-media {
     position: relative;

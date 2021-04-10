@@ -13,9 +13,7 @@ const HomePage = () => {
     <main>
 
       <div className="award">
-
-        {/* <Sequence /> */}
-
+      
         <Welcome />
         <Intro />
         <div className="award-background">
@@ -24,6 +22,8 @@ const HomePage = () => {
             <img src="/images/intro-background-tablet.jpg" alt="waterlight" width="960" height="1080" />
           </picture>
         </div>
+
+        <Sequence />
 
       </div>
 

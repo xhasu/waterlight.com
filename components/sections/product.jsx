@@ -20,7 +20,7 @@ const Product = () => {
       },
       duration: 1.2,
       opacity: 0,
-      y: "-25%",
+      y: '-25%',
     })
 
     gsap.from('.product .product-media', {
@@ -31,7 +31,7 @@ const Product = () => {
       },
       delay: 1,
       opacity: 0,
-      y: "-5%",
+      y: '-5%',
       scale: 0.5
     })
 

@@ -12,26 +12,64 @@ const Solution = () => {
 
   useEffect(() => {
 
-    let tlsh = gsap.timeline({
+    gsap.from('.solution-head .head-title', {
       scrollTrigger: {
         trigger: '.solution-head',
         start: 'top center',
         end: 'bottom center',
+        // toggleActions: 'play none none none',
+        scrub: true,
         pin: true,
-        pinSpacing: false,
+        // markers: true,
+      },
+      opacity: 0,
+      // y: '-10%'
+    })
+
+    let tlbgs = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.solution-head',
+        start: 'top center',
+        end: 'bottom center',
         scrub: true,
         // markers: true,
       }
     })
 
-    tlsh.set('.solution-background img', {opacity: 0})
+    tlbgs.from('.solution-background.bg-01', {opacity: 0})
+      .from('.solution-background.bg-02', {opacity: 0})
 
-    tlsh.from('.solution-head .head-info', {opacity: 0, y: '-10%'})
-      .to('.solution-background img:first-child', {opacity: 1})
-      .to('.solution-head .head-info', {opacity: 0, y: '-5%'}, '+=2')
-      .to('.solution-background img:first-child', {opacity: 0, y: '-15%'})
-      .from('.solution-background img:last-child', {opacity: 0, y: '+15%', x: '+2%' })
+    
+    gsap.from('.solution-product', {
+      scrollTrigger: {
+        trigger: '.solution-main',
+        start: 'top center',
+        end: 'bottom bottom',
+        toggleActions: 'play reverse play reverse',
+        // markers: true,
+      },
+      x: '+25%',
+      opacity: 0
+    })
 
+    let tlprods = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.solution-body',
+        start: 'top center',
+        end: 'bottom top',
+        pin: true,
+        scrub: true,
+        // markers: true,
+      }
+    })
+
+    tlprods.from('.solution-product img:nth-child(1)', {opacity: 0})
+      .to('.solution-product img:nth-child(1)', {display: 'none'})
+      .from('.solution-product img:nth-child(2)', {opacity: 0})
+      .to('.solution-product img:nth-child(2)', {display: 'none'})
+      .from('.solution-product img:nth-child(3)', {opacity: 0})
+      .to('.solution-product img:nth-child(3)', {display: 'none'})
+    
     let tlsb = gsap.timeline({
       scrollTrigger: {
         trigger: '.solution-body',
@@ -47,15 +85,12 @@ const Solution = () => {
 
     tlsb.from('.solution-body .head-description', {opacity: 0})
       .from(subtitles[0], { opacity: 0 })
-      .to(subtitles[0], {opacity: 0, display: 'none'}, '+=1')
+      .to(subtitles[0], {opacity: 0, display: 'none'}, '+=2')
       .from(subtitles[1], { opacity: 0 })
-      .to(subtitles[1], {opacity: 0, display: 'none'}, '+=1')
+      .to(subtitles[1], {opacity: 0, display: 'none'}, '+=2')
       .from(subtitles[2], { opacity: 0 })
-      .to(subtitles[2], {opacity: 0, display: 'none'}, '+=1')
+      .to(subtitles[2], {opacity: 0, display: 'none'})
       .to('.solution-body .head-description', {opacity: 0})
-      // .from('.solution-background img:last-child', {opacity: 1} , '+=2')
-      // .to('.solution-background img:last-child', {opacity: 0 , y: '-5%'})
-
 
     
     let tlsbox = gsap.timeline({
@@ -70,7 +105,7 @@ const Solution = () => {
     })
     
     tlsbox.from('.solution-box .head-title', {opacity: 0, y: '-5%'})
-      .from('.solution-box .head-description p', { opacity: 0, stagger: 0.5 })
+      .from('.solution-box .head-description p', { opacity: 0, stagger: 1 })
 
     gsap.from('.solution-decorate', {
       scrollTrigger: {
@@ -90,14 +125,10 @@ const Solution = () => {
   return (
     <section className="solution" id="solution">
 
-      <div className="solution-background">
-        <img src="/images/solution-background-01.jpg" alt="waterlight" width="1920" height="955" />
-        <img src="/images/solution-background-02.jpg" alt="waterlight" width="1920" height="955" />
-      </div>
+      <div className="solution-before"></div>
 
-      <div className="solution-product">
-          <img src="/images/solution-product-01.png" alt=""/>
-        </div>
+      <div className="solution-background bg-01"></div>
+      <div className="solution-background bg-02"></div>
 
       <div className="panel container solution-head">
 
@@ -140,11 +171,19 @@ const Solution = () => {
 
         </div>
 
+        <div className="solution-product">
+          <img src="/images/solution-product-01.png" alt=""/>
+          <img src="/images/solution-product-02.png" alt=""/>
+          <img src="/images/solution-product-03.png" alt=""/>
+        </div>
+
       </div>
 
       <div className="solution-decorate">
         <img src="/images/side-decorate.png" alt="" width="104" height="271" />
       </div>
+
+      <div className="solution-after"></div>
 
     </section>
   )

@@ -1,18 +1,20 @@
 .sequence {
 
-  position: relative;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
   z-index: 0;
 
   canvas {
-    position: fixed;
+    position: absolute;
     left: 50%;
-    // top: 50%;
-    // transform: translate(-50%, -50%);
-    bottom: 0;
+    bottom: 100%;
     transform: translate(-50%, 0);
     width: 1188px;
-    // width: 1158px;
     max-height: 100vh;
-    // border: 1px solid red;
   }
 }

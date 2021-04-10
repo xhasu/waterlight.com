@@ -47,9 +47,6 @@ const Intro = () => {
   return (
     <section className="intro" id="intro">
 
-      <div className="blurred left"></div>
-      <div className="blurred right"></div>
-
       <div className="panel container">
 
         <div className="head-box box-left head-box-intro">

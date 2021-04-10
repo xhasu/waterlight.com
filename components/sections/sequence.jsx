@@ -57,10 +57,23 @@ const Sequence = () => {
         trigger: '.award',
         start: "top top",
         end: "bottom bottom",
-        scrub: 0.5,
+        scrub: true,
+        // scrub: 0.5,
         // markers: true,
+        refreshPriority: -2,
       },
       onUpdate: render
+    })
+
+    gsap.to('.sequence canvas', {
+      scrollTrigger: {
+        trigger: '.award',
+        start: 'bottom center',
+        toggleActions: 'play reverse play reverse',
+        // markers: true,
+      },
+      opacity: 0,
+      duration: 1.5
     })
     
     return () => { }

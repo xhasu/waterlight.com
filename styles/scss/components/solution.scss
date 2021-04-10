@@ -1,19 +1,81 @@
 .solution {
   position: relative;
-  
-  &-background {
+  margin-top: 50vh;
+  z-index: 1;
 
-    position: -webkit-sticky;
+  &-before ,
+  &-after {
     position: sticky;
-    top: 0;
-    width: 100%;
+    position: -webkit-sticky;
+    left: 0;
+    right: 0;
     height: 0;
+    width: 100%;
+    user-select: none;
+    pointer-events: none;
+    z-index: 10;
+
+    &::before ,
+    &::after {
+      position: relative;
+      display: block;
+      user-select: none;
+      pointer-events: none;
+      width: 100%;
+      height: 320px;
+    }
+    &::before {
+      background-image: linear-gradient(0deg, rgba(black, 0), black);
+  
+    }
+    &::after {
+      background-image: linear-gradient(-180deg, rgba(black, 0), black);
+    }
+  }
+
+  &-before {
+    top: 0;
+    &::before {
+      content: "";
+    }
+  }
+  &-after {
+    bottom: 0;
+    &::after {
+      bottom: 320px;
+      content: "";
+    }
+  }
+
+  &-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
 
-    img {
-      @include absolute($top: 0, $left: 0, $right: 0);
-      @include img-cover();
-      height: 100vh;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 1920px 1080px;
+    background-attachment: fixed;
+
+    &.bg-01 {
+      background-image: url('/images/solution-background-01.jpg');
+      @include below($laptop) {
+        background-image: url('/images/solution-background-01-tablet.jpg');
+      }
+    }
+
+    &.bg-02 {
+      background-image: url('/images/solution-background-02.jpg');
+      @include below($laptop) {
+        background-image: url('/images/solution-background-02-tablet.jpg');
+      }
+    }
+
+    @include below($laptop) {
+      background-size: 100% auto;
     }
   }
 
@@ -34,11 +96,10 @@
 
   &-product {
 
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     right: 0;
-    height: 0;
+    bottom: 0;
     pointer-events: none;
     user-select: none;
 
