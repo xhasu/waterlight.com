@@ -16,7 +16,7 @@
   }
 
   &-close {
-    @include absolute($top: 60px, $right: 50px);
+    @include fixed($top: 60px, $right: 50px);
     display: block;
     width: 20px;
     height: 20px;

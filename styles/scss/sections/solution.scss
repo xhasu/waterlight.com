@@ -1,0 +1,76 @@
+.solution {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    background-image: transparent;
+    background-image: linear-gradient(-180deg, black, transparent);
+
+    user-select: none;
+    pointer-events: none;
+    z-index: 1;
+  
+    @include below($tablet) {
+      display: none;
+    }
+  }
+
+  &-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: .4;
+    background-image: url('/images/solution-background.jpg');
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+  }
+
+  .side-decorate {
+    position: fixed;
+    top: 40vh;
+    transform: translate(0, -50%);
+    z-index: 1;
+
+    @include below($tablet) {
+      width: 80px;
+    }
+
+    img {
+      @include img-fluid();
+    }
+  }
+
+  &-decorate {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 284px;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1;
+
+    img {
+      @include img-fluid();
+    }
+  }
+
+  &-box {
+    position: relative;
+    top: 300px;
+  }
+}

@@ -13,6 +13,7 @@
   background: transparent;
   text-decoration: none;
   user-select: none;
+  cursor: pointer;
 
   &:active,
   &:focus {
@@ -26,8 +27,9 @@
   width: 270px;
   height: 60px;
   background-color: $secondary-color;
+  font-family: 'Town 10 Display', 'Raleway', sans-serif;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
   box-shadow: 0 0 50px rgba(255, 210, 170, .2);

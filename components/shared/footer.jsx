@@ -1,22 +1,32 @@
-import React, { useContext } from 'react'
+import React, { useState, useContext } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
-import useTranslation from '../../hooks/useTranslation';
-import { LanguageContext } from '../../contexts/language-context';
+import useTranslation from '../../hooks/useTranslation'
+import { LanguageContext } from '../../contexts/language-context'
+
+import useBodyOverflow from '../../hooks/useBodyOverflow'
+
+import Popup from '../layouts/popup'
+import Tyc from './tyc'
 
 const Footer = () => {
 
+  const [isLegalVisible, setLegalVisible] = useState(false);
   const [locale, setlocale] = useContext(LanguageContext);
   const { t } = useTranslation();
+  const { toggleBodyOverflow } = useBodyOverflow();
 
   const changeLocale = (lang) => {
     setlocale(lang);
   };
 
-  const copyClipboard = () => {
-    navigator.clipboard.writeText(window.location.href)
-      .then(text => { console.log(text) })
-      .catch(err => console.log(err));
-  }
+  const handleLegalVisible = () => {
+
+    setLegalVisible(prev => {
+      toggleBodyOverflow();
+      return !prev;
+    })
+  };
 
   return (
     <footer className="footer">
@@ -72,13 +82,26 @@ const Footer = () => {
             <span>{+new Date().getFullYear()} Waterlight, {t('footer.copyright')}</span>
           </div>
           <div>
-            <a href="#"><span>{t('footer.tyc')}</span></a>
+            <span onClick={handleLegalVisible}>{t('footer.tyc')}</span>
             &nbsp; | &nbsp;
             <a href="#"><span>Cookies</span></a>
           </div>
         </div>
 
       </div>
+
+      <AnimatePresence>
+        {isLegalVisible && (
+          <Popup handleVisible={handleLegalVisible}>
+            <motion.div
+              initial={{ opacity: .4 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}>
+              <Tyc handleVisible={handleLegalVisible} />
+            </motion.div>
+          </Popup>
+        )}
+      </AnimatePresence>
 
     </footer>
   )

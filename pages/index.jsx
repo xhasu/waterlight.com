@@ -24,7 +24,7 @@ const HomePage = () => {
           </picture>
         </div>
 
-        {/* <Sequence /> */}
+        <Sequence />
 
       </div>
 
