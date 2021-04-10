@@ -44,4 +44,57 @@
       }
     }
   }
+
+  .panel {
+    min-height: 40vh;
+    @include below($tablet) {
+      min-height: auto;
+    }
+  }
+
+  &-armed {
+    position: relative;
+    @include center($app-width);
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .armed {
+    position: absolute;
+    bottom: 240px;
+    left: 0;
+    margin-right: 280px;
+    width: 100%;
+    max-width: 820px;
+    text-align: center;
+    z-index: 1;
+
+    @include below($laptop) {
+      max-width: 340px;
+    }
+
+    @include below($tablet) {
+      display: none;
+      visibility: hidden;
+    }
+
+    img {
+      position: relative;
+      @include img-fluid();
+    }
+  }
+
+  &-media {
+    display: none;
+    position: relative;
+
+    @include below($tablet) {
+      display: block;
+    }
+
+    img {
+      @include img-fluid();
+      margin-bottom: 24px;
+    }
+  }
 }

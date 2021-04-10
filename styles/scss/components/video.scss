@@ -5,7 +5,8 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 1440px;
+  // max-width: 1440px;
+  max-width: 1080px;
   box-sizing: border-box;
 
 
@@ -13,10 +14,23 @@
     margin-bottom: 40px;
   }
 
+  .embed16by9 {
+    position: relative;
+    padding-top: 56.25%;
+
+    iframe {
+      @include cover();
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
   img,
   video,
   iframe {
     @include img-fluid();
+    object-fit: cover;
     object-position: center;
 
     &:focus {
