@@ -65,16 +65,20 @@ const Experience = () => {
         end:  'bottom center',
         scrub: true,
         markers: true,
+        refreshPriority: -1,
       }
     })
 
-    tlprod.from('.armed img:nth-child(1)', {opacity: 0, y: '-15%'})
-      .from('.armed img:nth-child(2)', {opacity: 0, y: '-15%'})
-      .from('.armed img:nth-child(3)', {opacity: 0, y: '-15%'})
-      .from('.armed img:nth-child(4)', {opacity: 0, y: '-15%'})
-      .from('.armed img:nth-child(5)', {opacity: 0, y: '-15%'})
-      .from('.armed img:nth-child(6)', {opacity: 0, y: '-15%', duration: 2})
-      .from('.armed img:nth-child(7)', {opacity: 0, y: '-15%'})
+    tlprod.from('.armed img:nth-child(1)', {opacity: 0})
+      .from('.armed img:nth-child(2)', {opacity: 0})
+      .from('.armed img:nth-child(3)', {opacity: 0})
+      .from('.armed img:nth-child(4)', {opacity: 0})
+      .from('.armed img:nth-child(5)', {opacity: 0})
+      .from('.armed img:nth-child(6)', {opacity: 0, y: -200}, '<')
+      .from('.armed img:nth-child(7)', {opacity: 0, x: -150}, '<')
+      .from('.armed img:nth-child(8)', {opacity: 0, x: 150}, '<')
+      .from('.armed img:nth-child(9)', {opacity: 0.5, duration: 2})
+      .from('.armed img:nth-child(10)', {opacity: 0})
 
     return () => { }
   }, [])
@@ -150,7 +154,9 @@ const Experience = () => {
             <img src="/images/product/03.png" alt="" />
             <img src="/images/product/04.png" alt="" />
             <img src="/images/product/05.png" alt="" />
-            {/* <img src="/images/product/hook.png" alt="" /> */}
+            <img src="/images/product/hook.png" className="img-hook" alt="" />
+            <img src="/images/product/part-left.png" className="img-part-left" alt="" />
+            <img src="/images/product/part-right.png" className="img-part-right" alt="" />
             <img src="/images/product/06.png" alt="" />
             <img src="/images/product/07.png" alt="" />
           </div>

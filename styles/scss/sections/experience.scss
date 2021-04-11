@@ -46,7 +46,8 @@
   }
 
   .panel {
-    min-height: 40vh;
+    // min-height: 40vh;
+    min-height: 400px;
     @include below($tablet) {
       min-height: auto;
     }
@@ -56,6 +57,8 @@
     position: relative;
     @include center($app-width);
     padding: 0 20px;
+    user-select: none;
+    pointer-events: none;
     box-sizing: border-box;
   }
 
@@ -71,6 +74,7 @@
 
     @include below($laptop) {
       max-width: 340px;
+      margin-left: 120px;
     }
 
     @include below($tablet) {
@@ -78,9 +82,41 @@
       visibility: hidden;
     }
 
+    .img-hook {
+      position: absolute;
+      left: -180px;
+      right: 0;
+      margin-top: -320px;
+      z-index: -1;
+    }
+
+    .img-part-left {
+      position: absolute;
+      left: 0;
+      margin-top: 110px;
+      margin-left: 90px;
+      z-index: 2;
+      @include below($laptop) {
+        margin-left: -40px;
+      }
+    }
+
+    .img-part-right {
+      position: absolute;
+      right: 0;
+      margin-top: 110px;
+      margin-right: 140px;
+      z-index: 2;
+      @include below($laptop) {
+        margin-right: -40px;
+      }
+
+    }
+
     img {
       position: relative;
       @include img-fluid();
+      z-index: 1;
     }
   }
 

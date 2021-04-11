@@ -71,7 +71,7 @@ export const Lang = {
       },
       stage5: {
         title: 'CONEXIÓN ANCESTRAL',
-        text: 'Superficie antileslizante.',
+        text: 'Superficie antideslizante.',
       },
     },
     product: {
@@ -118,7 +118,7 @@ export const Lang = {
         text: 'to any canoe to improve the fishing process.',
       }
     },
-    inpire: {
+    inspire: {
       title: 'Why ',
       subtitle: 'THE WORLD NEEDS A CLEAN ENERGY REVOLUTION BECAUSE ',
       text1: 'About 1.5 billion people have no access to electricity',
