@@ -17,7 +17,7 @@ const Inspire = () => {
   
   useEffect(() => {
 
-    if( window.innerWidth <= 768) return true;
+    if( window.innerWidth <= 768 || screen.width <= 768 ) return true;
 
     // inspire background 
     let tlbg1 = gsap.timeline({
@@ -73,7 +73,7 @@ const Inspire = () => {
       .to('.inspire-body .head-description', {opacity: 0})
     
     // inspire decorate
-    gsap.from('.side-decorate', {
+    gsap.from('.inspire .side-decorate', {
       scrollTrigger: {
         trigger: '.inspire-body',
         start: 'top center',

@@ -72,8 +72,11 @@
     text-align: center;
     z-index: 1;
 
-    @include below($laptop) {
+    @include below($desktop) {
       max-width: 340px;
+    }
+
+    @include below($laptop) {
       margin-left: 120px;
     }
 

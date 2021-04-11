@@ -10,7 +10,7 @@ const Sequence = () => {
 
   useEffect(() => {
 
-    if( window.innerWidth <= 768) return true;
+    if( window.innerWidth <= 768 || screen.width <= 768 ) return true;
 
     const canvas = document.querySelector('.product-scrolling');
     const ctx = canvas.getContext('2d');

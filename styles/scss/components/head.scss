@@ -29,6 +29,11 @@
   padding-left: 25px;
   border-left: 5px solid transparent;
 
+  @include below($tablet) {
+    padding-left: 0;
+    border: none;
+  }
+
   &::before {
     display: none;
     content: "";

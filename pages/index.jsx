@@ -16,7 +16,7 @@ const HomePage = () => {
       <div className="award">
       
         <Welcome />
-        {/* <Intro /> */}
+        <Intro />
         <div className="award-background">
           <picture>
             <source media="(min-width: 768px)" srcSet="/images/intro-background.jpg"/>
@@ -24,15 +24,15 @@ const HomePage = () => {
           </picture>
         </div>
 
-        {/* <Sequence /> */}
+        <Sequence />
 
       </div>
 
       <Inspire />
-      {/* <Solution /> */}
-      {/* <Showcase /> */}
-      {/* <Experience /> */}
-      {/* <Product /> */}
+      <Solution />
+      <Showcase />
+      <Experience />
+      <Product />
 
     </main>
   )

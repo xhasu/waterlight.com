@@ -12,6 +12,8 @@ const Intro = () => {
 
   useEffect(() => {
 
+    if( window.innerWidth <= 768 || screen.width <= 768 ) return true;
+
     const boxes = document.querySelectorAll('.intro .panel.container');
 
     const createTimeline = (element, index) => {

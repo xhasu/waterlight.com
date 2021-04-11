@@ -12,7 +12,7 @@ const Solution = () => {
   
   useEffect(() => {
 
-    if( window.innerWidth <= 768) return true;
+    if( window.innerWidth <= 768 || screen.width <= 768 ) return true;
 
     // solution last stage
     let tlsbox = gsap.timeline({
@@ -56,7 +56,7 @@ const Solution = () => {
     */
 
     // solution decorate
-    gsap.from('.side-decorate', {
+    gsap.from('.solution .side-decorate', {
       scrollTrigger: {
         trigger: '.solution-box',
         start: 'top center',
