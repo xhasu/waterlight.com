@@ -12,7 +12,7 @@ const Solution = () => {
   
   useEffect(() => {
 
-    if( window.innerWidth < 768) return true;
+    if( window.innerWidth <= 768) return true;
 
     // solution last stage
     let tlsbox = gsap.timeline({
@@ -94,7 +94,7 @@ const Solution = () => {
         <div className="head-box">
           <div className="head-title">{t('solution.headline')}</div>
           <div className="solution-media">
-            <img src="/images/solution-product.png" alt="" width="1374" height="1335"/>
+            <img src="/images/solution-product.png" alt="" width="420"/>
             <img src="/images/bottom-decorate.png" alt="" width="120" />
           </div>
           <div className="head-description">

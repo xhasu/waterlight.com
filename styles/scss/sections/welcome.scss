@@ -10,13 +10,27 @@
   box-sizing: border-box;
   // z-index: 5;
 
-  .container {
-    z-index: 1;
+  @include below($tablet) {
+    background-image: url('/images/sequence/000.png');
+    background-position: center 10%;
+    background-size: auto 85%;
+    background-repeat: no-repeat;
+
+    align-items: flex-end;
+    min-height: 100vh;
   }
 
-  &-media {
-    position: relative;
+  @include below($sm) {
+    background-size: auto 80%;
   }
+
+  .container {
+    z-index: 1;
+    @include below($tablet) {
+      margin-bottom: 60px;
+    }
+  }
+
   &-logo {
     position: relative;
     max-width: 345px;
@@ -24,6 +38,16 @@
     margin-right: auto;
     margin-bottom: 60px;
     text-align: center;
+
+    @include below($tablet) {
+      max-width: 180px;
+      margin-bottom: 420px;
+    }
+    
+    @include below($sm) {
+      margin-bottom: 240px;
+    }
+
     img {
       @include img-fluid();
     }
@@ -37,6 +61,7 @@
     cursor: pointer;
     @include below($tablet) {
       font-size: 15px;
+      letter-spacing: 3px;
     }
   }
   &-icon {
@@ -48,8 +73,14 @@
     // cursor: pointer;
     box-sizing: border-box;
     z-index: 1;
+
+    @include below($tablet) {
+      width: 10px;
+      bottom: 5px;
+    }
+
     img {
-      display: block;
+      @include img-fluid();
       margin-bottom: 0;
     }
   }
