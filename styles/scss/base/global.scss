@@ -125,6 +125,14 @@ section {
   @include center($app-width);
   padding: 0 20px;
   box-sizing: border-box;
+
+  @include below($hd) {
+    max-width: 960px;
+  }
+
+  @include below($desktop) {
+    max-width: 768px;
+  }
 }
 
 .compact {

@@ -9,6 +9,11 @@
 
   // @include mark();
 
+  @include below($tablet) {
+    // min-height: 80vh;
+    min-height: 620px;
+  }
+
   .head-box {
     flex: none;
   }

@@ -82,6 +82,10 @@
   letter-spacing: 6px;
   text-transform: uppercase;
 
+  @include below($desktop) {
+    font-size: 35px;
+  }
+
   @include below($tablet) {
     font-size: 25px;
   }
@@ -90,6 +94,11 @@
     margin-bottom: 0;
     font-size: 60px;
     letter-spacing: 8px;
+
+    @include below($desktop) {
+      font-size: 42px;
+    }
+
     @include below($tablet) {
       font-size: 30px;
       text-align: center;
@@ -102,6 +111,11 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     letter-spacing: 4px;
+
+    @include below($desktop) {
+      font-size: 28px;
+    }
+
     @include below($tablet) {
       font-size: 20px;
       letter-spacing: 2px;
@@ -118,6 +132,10 @@
   letter-spacing: 4px;
   text-transform: uppercase;
 
+  @include below($desktop) {
+    font-size: 33px;
+  }
+
   @include below($tablet) {
     font-size: 24px;
   }
@@ -126,6 +144,11 @@
     font-size: 30px;
     letter-spacing: 4px;
     margin-bottom: 0;
+
+    @include below($desktop) {
+      font-size: 18px;
+    }
+
     @include below($tablet) {
       font-size: 13px;
       letter-spacing: 2px;
@@ -141,14 +164,14 @@
     font-weight: 300;
     font-size: 15px;
     letter-spacing: 2px;
-    @include below($tablet) {
+    @include below($desktop) {
       font-size: 12px;
     }
   }
   p.lead {
     font-size: 18px;
     text-transform: uppercase;
-    @include below($tablet) {
+    @include below($desktop) {
       font-size: 13px;
     }
   }  

@@ -12,6 +12,8 @@ const Solution = () => {
   
   useEffect(() => {
 
+    if( window.innerWidth < 768) return true;
+
     // solution last stage
     let tlsbox = gsap.timeline({
       scrollTrigger: {
@@ -40,6 +42,7 @@ const Solution = () => {
     }) 
 
     // solution product 
+    /*
     gsap.to('.solution-product', {
       scrollTrigger: {
         trigger: '.solution-product',
@@ -50,6 +53,7 @@ const Solution = () => {
       },
       opacity: 0,
     }) 
+    */
 
     // solution decorate
     gsap.from('.side-decorate', {
@@ -89,6 +93,10 @@ const Solution = () => {
 
         <div className="head-box">
           <div className="head-title">{t('solution.headline')}</div>
+          <div className="solution-media">
+            <img src="/images/solution-product.png" alt="" width="1374" height="1335"/>
+            <img src="/images/bottom-decorate.png" alt="" width="120" />
+          </div>
           <div className="head-description">
             <p className="lead font-town font-medium">
               {t('solution.description1')}
