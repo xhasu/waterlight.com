@@ -22,9 +22,9 @@ const Inspire = () => {
       },
     })
 
-    tlbg1.from('.inspire-background.bg-01', {opacity: 0, duration: 2})
-      .to('.inspire-background.bg-01', {opacity: 0})
-      .from('.inspire-background.bg-02', {opacity: 0})
+    tlbg1.from('.inspire-background.bg-01', {opacity: 0})
+      .to('.inspire-background.bg-01', {opacity: 0, duration: 0.5})
+      .from('.inspire-background.bg-02', {opacity: 0, duration: 2})
 
 
     // timeline head

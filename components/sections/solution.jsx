@@ -43,7 +43,8 @@ const Solution = () => {
     gsap.to('.solution-product', {
       scrollTrigger: {
         trigger: '.solution-product',
-        start: 'top 30%',
+        // start: 'top 30%',
+        start: 'bottom 110%',
         toggleActions: 'play reverse play reverse',
         // markers: true,
       },
@@ -101,7 +102,8 @@ const Solution = () => {
       </div>
 
       <div className="solution-product">
-        <img src="/images/solution-product.png" alt=""/>
+        {/* <img src="/images/solution-product.png" alt="" width="1374" height="1335"/> */}
+        <img src="/images/solution-product-alter.png" alt="" width="688" height="1390"/>
       </div>
 
       <div className="side-decorate">
