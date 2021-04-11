@@ -64,8 +64,8 @@ const Experience = () => {
         start: 'top center',
         end:  'bottom center',
         scrub: true,
-        markers: true,
         refreshPriority: -1,
+        // markers: true,
       }
     })
 

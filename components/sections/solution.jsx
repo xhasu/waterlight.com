@@ -37,7 +37,18 @@ const Solution = () => {
         // markers: true,
       },
       opacity: 0,
-    })  
+    }) 
+
+    // solution product 
+    gsap.to('.solution-product', {
+      scrollTrigger: {
+        trigger: '.solution-product',
+        start: 'top 30%',
+        toggleActions: 'play reverse play reverse',
+        // markers: true,
+      },
+      opacity: 0,
+    }) 
 
     // solution decorate
     gsap.from('.side-decorate', {
@@ -87,6 +98,10 @@ const Solution = () => {
           </div>
         </div>
 
+      </div>
+
+      <div className="solution-product">
+        <img src="/images/solution-product.png" alt=""/>
       </div>
 
       <div className="side-decorate">
