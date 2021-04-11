@@ -1,10 +1,11 @@
 import Head from 'next/head'
 
-import MainLayout from '../components/layouts/main-layout';
-import { LanguageProvider } from '../contexts/language-context';
+import MainLayout from '../components/layouts/main-layout'
+import { LanguageProvider } from '../contexts/language-context'
 
+import 'swiper/components/pagination/pagination.scss'
 import 'swiper/swiper.scss'
-import '../styles/scss/main.scss';
+import '../styles/scss/main.scss'
 
 function MyApp({ Component, pageProps }) {
   return (

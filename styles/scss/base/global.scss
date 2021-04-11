@@ -116,7 +116,7 @@ main {
 section {
   position: relative;
   min-height: 100vh;
-  @include below($tablet) {
+  @include below($laptop) {
     min-height: 640px;
   }
 }

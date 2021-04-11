@@ -1,16 +1,23 @@
 import React, { useEffect } from 'react'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+import SwiperCore, { Pagination } from 'swiper'
+
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 import useTranslation from '../../hooks/useTranslation';
 
 gsap.registerPlugin(ScrollTrigger);
+SwiperCore.use([Pagination]);
 
 const Inspire = () => {
 
   const { t } = useTranslation();
   
   useEffect(() => {
+
+    if( window.innerWidth <= 768) return true;
 
     // inspire background 
     let tlbg1 = gsap.timeline({
@@ -66,7 +73,7 @@ const Inspire = () => {
       .to('.inspire-body .head-description', {opacity: 0})
     
     // inspire decorate
-    gsap.from('.inspire-decorate', {
+    gsap.from('.side-decorate', {
       scrollTrigger: {
         trigger: '.inspire-body',
         start: 'top center',
@@ -111,6 +118,14 @@ const Inspire = () => {
     return () => {}
   }, [])
 
+  const handleSwiper = (swiper) => {
+    let subtitles = document.querySelectorAll('.inspire-body .head-subtitle');
+    let idx = swiper.realIndex;
+    console.log(idx);
+    subtitles.forEach(sub => sub.classList.remove('active'))
+    subtitles.item(idx).classList.add('active');
+  }
+
   return (
     <section className="inspire" id="inspire">
 
@@ -125,7 +140,7 @@ const Inspire = () => {
         <img src="/images/inspire-product-03.png" alt=""/>
       </div>
 
-      <div className="inspire-decorate">
+      <div className="side-decorate">
         <img src="/images/side-decorate.png" alt="" width="104" height="271" />
       </div>
 
@@ -142,6 +157,20 @@ const Inspire = () => {
         <div className="head-info">
           <div className="head-description">
             <p className="lead"> {t('inspire.subtitle')} </p>
+          </div>
+          <div className="inspire-swiper">
+            <Swiper loop="true" onSlideChange={handleSwiper} pagination={{el: '.inspire-swiper .swiper-pagination', type: 'bullets'}}>
+              <SwiperSlide className="inspire-media">
+                <img src="/images/inspire-media-01.png" alt="" width="640" />
+              </SwiperSlide>
+              <SwiperSlide className="inspire-media">
+                <img src="/images/inspire-media-02.png" alt="" width="640" />
+              </SwiperSlide>
+              <SwiperSlide className="inspire-media">
+                <img src="/images/inspire-media-03.png" alt="" width="640" />
+              </SwiperSlide>
+              <div className="swiper-pagination"></div>
+            </Swiper>
           </div>
           <div className="head-subtitle lead"> {t('inspire.text1')} </div>
           <div className="head-subtitle lead"> {t('inspire.text2')} </div>

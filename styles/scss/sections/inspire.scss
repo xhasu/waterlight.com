@@ -3,6 +3,14 @@
   margin-top: 20vh;
   z-index: 1;
 
+  @include below($desktop) {
+    min-height: auto;
+  }
+  @include below($tablet) {
+    margin-top: 0;
+    min-height: 960px;
+  }
+
   &-sticky-before ,
   &-sticky-after {
     position: sticky;
@@ -31,6 +39,11 @@
     &::after {
       background-image: linear-gradient(-180deg, rgba(black, 0), black);
     }
+
+    @include below($tablet) {
+      display: none;
+      visibility: hidden;
+    }
   }
 
   &-sticky-before {
@@ -50,6 +63,63 @@
   &-head {
     top: 300px;
     min-height: 60vh;
+    @include below($tablet) {
+      top: 0;
+      padding-top: 80px;
+      min-height: 620px;
+    }
+    @include below($sm) {
+      min-height: 420px;
+    }
+  }
+
+  &-body {
+    position: relative;
+    z-index: 1;
+
+    @include below($tablet) {
+      padding-top: 40px;
+    }
+
+    .head-subtitle {
+      @include below($tablet) {
+        display: none;
+      }
+    }
+    .head-subtitle.active {
+      @include below($tablet) {
+        display: block;
+      }
+    }
+  }
+
+  .head-info {
+    @include below($laptop) {
+      max-width: 480px;
+      margin-left: 80px;
+    }
+    @include below($tablet) {
+      margin-left: auto;
+    }
+  }
+
+  .head-title {
+    @include below($tablet) {
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80px;
+        height: 2px;
+        background-color: white;
+      }
+    }
   }
 
   &-background {
@@ -70,12 +140,44 @@
       @include below($laptop) {
         background-image: url('/images/inspire-background-01-tablet.jpg');
       }
+      @include below($tablet) {
+        height: 620px;
+        bottom: auto;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: right center;
+
+        &::after {
+          display: block;
+          content: "";
+          position: absolute;
+      
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 250px;
+          background-image: transparent;
+          background-image: linear-gradient(0deg, black, transparent);
+      
+          user-select: none;
+          pointer-events: none;
+          z-index: 1;
+
+        }
+      }
+
+      @include below($sm) {
+        height: 420px;
+      }
     }
 
     &.bg-02 {
       background-image: url('/images/inspire-background-02.jpg');
       @include below($laptop) {
         background-image: url('/images/inspire-background-02-tablet.jpg');
+      }
+      @include below($tablet) {
+        display: none;
       }
     }
 
@@ -85,14 +187,18 @@
     }
   }
 
-  &-decorate {
+  .side-decorate {
     position: fixed;
     top: 60vh;
     transform: translate(0, -50%);
     z-index: 1;
 
+    @include below($desktop) {
+      width: 60px;
+    }
+
     @include below($tablet) {
-      width: 80px;
+      display: none;
     }
 
     img {
@@ -108,13 +214,91 @@
     bottom: 0;
     pointer-events: none;
     user-select: none;
+    overflow: hidden;
+    z-index: 0;
+
+    @include below($hd) {
+      max-width: 420px;
+    }
+
+    @include below($desktop) {
+      max-width: 320px;
+    }
+
+    @include below($laptop) {
+      max-width: 200px;
+    }
+
+    @include below($tablet) {
+      display: none;
+    }
 
     img {
       display: block;
       margin-left: auto;
       margin-right: 0;
       margin-bottom: 0;
+      max-width: 620px;
+      width: 100%;
       height: 100vh;
+      object-fit: cover;
+      object-position: left center;
+
+    }
+  }
+
+  &-media {
+    position: relative;
+    margin-bottom: 40px;
+
+    img {
+      @include img-fluid();
+      margin-bottom: 0;
+    }
+
+    &::before ,
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+  
+      left: 0;
+      right: 0;
+      height: 150px;
+      background-image: transparent;
+      background-image: linear-gradient(0deg, black, transparent);
+  
+      user-select: none;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    &::before {
+      top: 0;
+      background-image: linear-gradient(-180deg, black, transparent);
+    }
+
+    &::after {
+      bottom: 0;
+      background-image: linear-gradient(0deg, black, transparent);
+    }
+  }
+
+  &-swiper {
+
+    @include above($tablet + 1) {
+      display: none;
+    }
+
+    .swiper-pagination-bullet {
+      width: 9px;
+      height: 9px;
+      border: 1px solid white;
+      background: transparent;
+      opacity: 1;
+      &-active {
+        background-color: white;
+      }
     }
   }
 }
