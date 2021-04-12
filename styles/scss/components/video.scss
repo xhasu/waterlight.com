@@ -51,6 +51,7 @@
     letter-spacing: 6px;
     text-align: center;
     box-sizing: border-box;
+    text-shadow: 0 2px 40px white;
 
     @include below($desktop) {
       margin-bottom: 30px;

@@ -13,7 +13,7 @@ export const Lang = {
     },
     intro: {
       stage1: {
-        title: '¿Qué es ',
+        title: '¿Qué \n es ',
         text1: 'Un dispositivo que crea energía eléctrica utilizando solo el agua salada.',
         text2: 'Esto, gracias a la ionización de un electrolito compuesto de agua salada, que convierte el aluminio de su interior en electricidad.'
       },

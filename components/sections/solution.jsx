@@ -42,7 +42,6 @@ const Solution = () => {
     }) 
 
     // solution product 
-    /*
     gsap.to('.solution-product', {
       scrollTrigger: {
         trigger: '.solution-product',
@@ -53,7 +52,7 @@ const Solution = () => {
       },
       opacity: 0,
     }) 
-    */
+    
 
     // solution decorate
     gsap.from('.solution .side-decorate', {

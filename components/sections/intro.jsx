@@ -54,7 +54,6 @@ const Intro = () => {
   const handleSwiper = (swiper) => {
     let boxes = document.querySelectorAll('.intro .intro-box');
     let idx = swiper.realIndex;
-    console.log(idx);
     boxes.forEach(sub => sub.classList.remove('active'))
     boxes.item(idx).classList.add('active');
   }
@@ -63,10 +62,6 @@ const Intro = () => {
     <section className="intro" id="intro">
 
       <div className="panel container">
-
-        <div className="intro-media">
-          <img src="/images/intro-01.png" alt="" width="960" height="1080" />
-        </div>
 
         <div className="head-box box-left head-box-intro">
           <div className="head-title">{t('intro.stage1.title')} <br/>WaterLight?</div>
@@ -85,16 +80,16 @@ const Intro = () => {
       <div className="intro-swiper">
         <Swiper loop="true" onSlideChange={handleSwiper} pagination={{el: '.intro-swiper .swiper-pagination', type: 'bullets'}}>
           <SwiperSlide className="intro-media">
-            <img src="/images/intro-02.png" alt="" width="960" height="1080" />
-          </SwiperSlide>
-          <SwiperSlide className="intro-media">
-            <img src="/images/intro-03.png" alt="" width="960" height="1080" />
+            <img src="/images/intro-01.png" alt="" width="960" height="1080" />
           </SwiperSlide>
           <SwiperSlide className="intro-media">
             <img src="/images/intro-02.png" alt="" width="960" height="1080" />
           </SwiperSlide>
           <SwiperSlide className="intro-media">
             <img src="/images/intro-03.png" alt="" width="960" height="1080" />
+          </SwiperSlide>
+          <SwiperSlide className="intro-media">
+            <img src="/images/intro-04.png" alt="" width="960" height="1080" />
           </SwiperSlide>
           <div className="swiper-pagination"></div>
         </Swiper>
