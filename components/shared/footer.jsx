@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-share">
-              <a className="share-item" href="https://www.instagram.com/" target='_blank' rel="noopener">
+              <a className="share-item" href="https://www.instagram.com/edinawaterlight/" target='_blank' rel="noopener">
                 <span>
                   <img src="/images/icon-instagram.png" alt="instagram waterlight" width="40" height="40" />
                 </span>
@@ -66,7 +66,7 @@ const Footer = () => {
                   <img src="/images/icon-linkedin.png" alt="linkedin waterlight" width="40" height="40" />
                 </span>
               </a>
-              <a className="share-item" href="https://www.youtube.com/" target='_blank' rel="noopener">
+              <a className="share-item" href="https://www.youtube.com/channel/UC98Oz8Y2ij75arS125Li-Nw/featured" target='_blank' rel="noopener">
                 <span>
                   <img src="/images/icon-youtube.png" alt="youtube waterlight" width="40" height="40" />
                 </span>
@@ -83,8 +83,8 @@ const Footer = () => {
           </div>
           <div>
             <span onClick={handleLegalVisible}>{t('footer.tyc')}</span>
-            &nbsp; | &nbsp;
-            <a href="#"><span>Cookies</span></a>
+            {/* &nbsp; | &nbsp; */}
+            {/* <a href="#"><span>Cookies</span></a> */}
           </div>
         </div>
 

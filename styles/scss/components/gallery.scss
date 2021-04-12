@@ -19,6 +19,9 @@
     text-align: center;
     text-transform: uppercase;
     box-sizing: border-box;
+    @include below($tablet) {
+      padding-top: 60px;
+    }
   }
   &-title {
     margin-bottom: 6px;
@@ -58,8 +61,8 @@
   &-slide {
     position: relative;
     img {
-      // @include img-contain();
-      @include img-cover();
+      @include img-contain();
+      // @include img-cover();
     }
   }
 
@@ -73,7 +76,7 @@
 
     @include below($tablet) {
       top: auto;
-      bottom: -15px;
+      bottom: 25%;
     }
 
     img {

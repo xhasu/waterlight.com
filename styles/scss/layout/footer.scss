@@ -30,6 +30,7 @@
 
   &-brand {
     position: relative;
+    align-self: flex-end;
     @include below($tablet) {
       margin-bottom: 60px;
     }

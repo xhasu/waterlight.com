@@ -2,7 +2,12 @@ import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
+import { Swiper, SwiperSlide } from 'swiper/react'
+import SwiperCore, { Pagination } from 'swiper'
+
 import useTranslation from '../../hooks/useTranslation';
+
+SwiperCore.use([Pagination]);
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,10 +51,22 @@ const Intro = () => {
     return () => { };
   }, []);
 
+  const handleSwiper = (swiper) => {
+    let boxes = document.querySelectorAll('.intro .intro-box');
+    let idx = swiper.realIndex;
+    console.log(idx);
+    boxes.forEach(sub => sub.classList.remove('active'))
+    boxes.item(idx).classList.add('active');
+  }
+
   return (
     <section className="intro" id="intro">
 
       <div className="panel container">
+
+        <div className="intro-media">
+          <img src="/images/intro-01.png" alt="" width="960" height="1080" />
+        </div>
 
         <div className="head-box box-left head-box-intro">
           <div className="head-title">{t('intro.stage1.title')} <br/>WaterLight?</div>
@@ -65,7 +82,25 @@ const Intro = () => {
 
       </div>
 
-      <div className="panel container">
+      <div className="intro-swiper">
+        <Swiper loop="true" onSlideChange={handleSwiper} pagination={{el: '.intro-swiper .swiper-pagination', type: 'bullets'}}>
+          <SwiperSlide className="intro-media">
+            <img src="/images/intro-02.png" alt="" width="960" height="1080" />
+          </SwiperSlide>
+          <SwiperSlide className="intro-media">
+            <img src="/images/intro-03.png" alt="" width="960" height="1080" />
+          </SwiperSlide>
+          <SwiperSlide className="intro-media">
+            <img src="/images/intro-02.png" alt="" width="960" height="1080" />
+          </SwiperSlide>
+          <SwiperSlide className="intro-media">
+            <img src="/images/intro-03.png" alt="" width="960" height="1080" />
+          </SwiperSlide>
+          <div className="swiper-pagination"></div>
+        </Swiper>
+      </div>
+
+      <div className="panel container intro-box">
 
         <div className="head-box box-right head-bordered">
           <div className="head-subtitle">{t('intro.stage2.title')}</div>
@@ -78,7 +113,7 @@ const Intro = () => {
 
       </div>
 
-      <div className="panel container">
+      <div className="panel container intro-box">
 
         <div className="head-box box-left head-bordered">
           <div className="head-subtitle mb-2">{t('intro.stage3.title')}</div>
@@ -91,7 +126,7 @@ const Intro = () => {
 
       </div>
 
-      <div className="panel container">
+      <div className="panel container intro-box">
 
         <div className="head-box box-right head-bordered">
           <div className="head-subtitle">{t('intro.stage4.title')}</div>
@@ -104,7 +139,7 @@ const Intro = () => {
 
       </div>
 
-      <div className="panel container">
+      <div className="panel container intro-box">
 
         <div className="head-box box-left head-bordered">
           <div className="head-subtitle mb-2">{t('intro.stage5.title')}</div>

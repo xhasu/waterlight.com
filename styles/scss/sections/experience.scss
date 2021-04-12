@@ -28,6 +28,7 @@
       font-weight: 300;
       @include below($tablet) {
         font-size: 15px;
+        margin-bottom: 60px;
       }
     }
 
@@ -129,6 +130,9 @@
 
     @include below($tablet) {
       display: block;
+      max-width: 180px;
+      margin-right: auto;
+      margin-left: auto;
     }
 
     img {

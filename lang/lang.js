@@ -31,7 +31,7 @@ export const Lang = {
       },
       stage5: {
         title: 'Facilmente adaptable',
-        text: 'Adaptable a cualquier canoa para mejorar el proceso de pesca.',
+        text: 'A cualquier canoa para mejorar el proceso de pesca.',
       }
     },
     inspire: {
@@ -44,14 +44,14 @@ export const Lang = {
     solution: {
       headline: 'La solución',
       description1: 'Waterlight produce energía eléctrica a partir de un recurso natural renovable como el agua salada.',
-      description2: 'Esto mejora la calidad de vida de las comunidades sin acceso a este recurso vital, ofreciendo una alternativa energética con el poder de suplir una gran demanda mientras se cuida el medio ambiente.'
+      description2: 'Esto mejora la calidad de vida de las comunidades sin acceso a este recurso vital, ofreciendo una alternativa energética con el poder de suplir una gran demanda, mientras se cuida el medio ambiente.'
     },
     showcase: {
       title: 'WATERLIGHT en La Guajira',
       gallery: 'Ver galería'
     },
     experience: {
-      subtitle: '¿COMO FUNCIONA?',
+      subtitle: '¿CÓMO FUNCIONA?',
       title: 'Nace de algo natural y evoluciona en algo asombroso',
       stage1: {
         title: 'CONEXIÓN ANCESTRAL',
@@ -63,7 +63,7 @@ export const Lang = {
       },
       stage3: {
         title: 'RECICLABLE',
-        text: 'Ensamblado con materiales 100 % reciclables',
+        text: 'Ensamblado con materiales 100 % reciclables.',
       },
       stage4: {
         title: 'WATERPROOF',

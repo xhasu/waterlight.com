@@ -121,7 +121,6 @@ const Inspire = () => {
   const handleSwiper = (swiper) => {
     let subtitles = document.querySelectorAll('.inspire-body .head-subtitle');
     let idx = swiper.realIndex;
-    console.log(idx);
     subtitles.forEach(sub => sub.classList.remove('active'))
     subtitles.item(idx).classList.add('active');
   }

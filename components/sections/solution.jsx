@@ -94,8 +94,8 @@ const Solution = () => {
         <div className="head-box">
           <div className="head-title">{t('solution.headline')}</div>
           <div className="solution-media">
-            <img src="/images/solution-product.png" alt="" width="420"/>
-            <img src="/images/bottom-decorate.png" alt="" width="120" />
+            <img src="/images/solution-product.png" alt="" width="240"/>
+            {/* <img src="/images/bottom-decorate.png" alt="" width="120" /> */}
           </div>
           <div className="head-description">
             <p className="lead font-town font-medium">

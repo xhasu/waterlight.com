@@ -23,8 +23,8 @@ const Sequence = () => {
     const frameCount = 208;
     // const frameCount = 150;
 
-    canvas.width = 1188;
-    canvas.height = 810;
+    canvas.width = 1600;
+    canvas.height = 900;
     // canvas.width = 1158;
     // canvas.height = 770;
 

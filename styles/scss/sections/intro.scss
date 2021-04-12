@@ -29,12 +29,56 @@
       margin-left: 5px;
       margin-right: 5px;
       text-align: left;
+      margin-bottom: 30px;
     }
   }
 
   .panel {
     @include below($tablet) {
       min-height: auto;
+    }
+  }
+
+  &-media {
+    position: relative;
+    @include above($tablet + 1) {
+      display: none;
+    }
+    img {
+      @include img-fluid();
+    }
+  }
+
+  &-swiper {
+
+    @include above($tablet + 1) {
+      display: none;
+    }
+
+    .swiper-pagination-bullet {
+      width: 9px;
+      height: 9px;
+      border: 1px solid white;
+      background: transparent;
+      opacity: 1;
+      &-active {
+        background-color: white;
+      }
+    }
+
+    .intro-media {
+      margin-bottom: 30px;
+    }
+  }
+
+  &-box {
+    @include below($tablet) {
+      display: none;
+    }
+  }
+  &-box.active {
+    @include below($tablet) {
+      display: block;
     }
   }
 }
