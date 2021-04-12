@@ -61,7 +61,7 @@ const Footer = () => {
                   <img src="/images/icon-instagram.png" alt="instagram waterlight" width="40" height="40" />
                 </span>
               </a>
-              <a className="share-item" href="https://www.linkedin.com/" target='_blank' rel="noopener">
+              <a className="share-item" href="https://www.linkedin.com/company/edinawaterlight/" target='_blank' rel="noopener">
                 <span>
                   <img src="/images/icon-linkedin.png" alt="linkedin waterlight" width="40" height="40" />
                 </span>
