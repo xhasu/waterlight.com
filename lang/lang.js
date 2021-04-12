@@ -13,9 +13,9 @@ export const Lang = {
     },
     intro: {
       stage1: {
-        title: '¿Qué \n es ',
+        title: '¿Qué es ',
         text1: 'Un dispositivo que crea energía eléctrica utilizando solo el agua salada.',
-        text2: 'Esto, gracias a la ionización de un electrolito compuesto de agua salada, que convierte el aluminio de su interior en electricidad.'
+        text2: 'Esto, gracias a la ionización de un electrolito compuesto de agua salada, que convierte el magnesio de su interior en electricidad.'
       },
       stage2: {
         title: 'Energía limpia y renovable',
@@ -99,7 +99,7 @@ export const Lang = {
       stage1: {
         title: 'What is ',
         text1: 'A device that provides electrical power using only salt-water.',
-        text2: 'This thanks to the ionization of an electrolyte made up of saltwater that transforms the aluminum on the inside into electrical energy.'
+        text2: 'This thanks to the ionization of an electrolyte made up of saltwater that transforms the magnesium on the inside into electrical energy.'
       },
       stage2: {
         title: 'Clean and renewable energy',
