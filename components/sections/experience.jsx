@@ -16,7 +16,7 @@ const Experience = () => {
       trigger: '.experience',
       start: 'top top',
       end: 'bottom top',
-      toggleClass: { targets: 'header.header', className: 'dark' },
+      toggleClass: { targets: 'header.header, .nav-bar', className: 'dark' },
       scrub: true,
       // markers: true,
       refreshPriority: -1

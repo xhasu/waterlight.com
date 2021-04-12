@@ -2,7 +2,7 @@ export const Lang = {
   es: {
     appname: 'Waterlight ES',
     title: 'Waterlight',
-    cta: 'Preordena aquí',
+    cta: 'Más información',
     header: {
       what: '¿Qué es Waterlight?',
       why: '¿Por Qué Waterlight?',
@@ -70,7 +70,7 @@ export const Lang = {
         text: 'Resistente al agua exterior.',
       },
       stage5: {
-        title: 'CONEXIÓN ANCESTRAL',
+        title: 'PRÁCTICO',
         text: 'Superficie antideslizante.',
       },
     },
@@ -86,7 +86,7 @@ export const Lang = {
   en: {
     appname: 'Waterlight EN',
     title: 'Waterlight',
-    cta: 'Preorder here',
+    cta: 'More information',
     header: {
       what: 'What is Waterlight?',
       why: 'Why Waterlight?',

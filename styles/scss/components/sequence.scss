@@ -20,10 +20,14 @@
     bottom: 100%;
     // bottom: 50%;
     transform: translate(-50%, 0%);
-    // margin-bottom: 5%;
     // width: 1188px;
     max-width: 100vw;
     max-height: 100vh;
+
+    @media only screen and (max-width: $desktop) and (orientation: portrait) {
+      max-width: 150vw;
+      transform: translate(-50%, -25%);
+    }
 
     @include below($laptop) {
       max-width: 960px;

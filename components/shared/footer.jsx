@@ -66,6 +66,11 @@ const Footer = () => {
                   <img src="/images/icon-linkedin.png" alt="linkedin waterlight" width="40" height="40" />
                 </span>
               </a>
+              <a className="share-item" href="https://twitter.com/EdinaWaterlight" target='_blank' rel="noopener">
+                <span>
+                  <img src="/images/icon-twitter.png" alt="twitter waterlight" width="40" height="40" />
+                </span>
+              </a>
               <a className="share-item" href="https://www.youtube.com/channel/UC98Oz8Y2ij75arS125Li-Nw/featured" target='_blank' rel="noopener">
                 <span>
                   <img src="/images/icon-youtube.png" alt="youtube waterlight" width="40" height="40" />

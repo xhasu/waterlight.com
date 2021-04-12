@@ -24,14 +24,15 @@ const Inspire = () => {
       scrollTrigger: {
         trigger: '.inspire-head',
         start: 'top center',
-        end: 'bottom center',
+        end: 'bottom top',
         scrub: 1,
+        // markers: true,
       },
     })
 
     tlbg1.from('.inspire-background.bg-01', {opacity: 0})
       .to('.inspire-background.bg-01', {opacity: 0, duration: 0.5})
-      .from('.inspire-background.bg-02', {opacity: 0, duration: 2})
+      .from('.inspire-background.bg-02', {opacity: 0})
 
 
     // timeline head

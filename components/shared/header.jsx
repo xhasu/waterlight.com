@@ -89,7 +89,7 @@ const Header = () => {
                 </ul>
               </motion.div>
               <div className="nav-actions">
-                <a href="#" className="btn btn-secondary">Preordena aquí</a>
+                <a href="mailto:info@e-dina.com" className="btn btn-secondary">{t('cta')}</a>
               </div>
             </div>
             <motion.div

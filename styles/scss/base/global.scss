@@ -127,10 +127,12 @@ section {
   box-sizing: border-box;
 
   @include below($hd) {
+    max-width: 1180px;
+  }
+  @include below($desktop) {
     max-width: 960px;
   }
-
-  @include below($desktop) {
+  @include below($laptop) {
     max-width: 768px;
   }
 }

@@ -5,7 +5,8 @@
   min-height: calc(100vh - 104px);
 
   display: flex;
-  align-items: center;
+  // align-items: center;
+  align-items: flex-end;
   justify-content: center;
   box-sizing: border-box;
   // z-index: 5;
@@ -38,8 +39,10 @@
     margin-right: auto;
     margin-bottom: 60px;
     text-align: center;
+    display: none;
 
     @include below($tablet) {
+      display: block;
       max-width: 180px;
       margin-bottom: 420px;
     }
@@ -59,7 +62,9 @@
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+    margin-bottom: 60px;
     @include below($tablet) {
+      display: none;
       font-size: 15px;
       letter-spacing: 3px;
     }
