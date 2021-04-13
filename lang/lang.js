@@ -37,7 +37,7 @@ export const Lang = {
     inspire: {
       title: '¿Por qué ',
       subtitle: 'El mundo necesita una revolución de energía limpia porque',
-      text1: 'Cerca de 1.5 billones de personas no cuentan con acceso a energía eléctrica.',
+      text1: 'Cerca de 840 millones de personas no cuentan con acceso a energía eléctrica.',
       text2: 'de acuerdo a las Naciones Unidas, se espera que para el 2035 la demanda de electricidad aumente un 70%.',
       text3: 'Se estima que las reservas de combustibles fósiles se agoten en los próximos 52 años.',
     },
@@ -121,7 +121,7 @@ export const Lang = {
     inspire: {
       title: 'Why ',
       subtitle: 'THE WORLD NEEDS A CLEAN ENERGY REVOLUTION BECAUSE ',
-      text1: 'About 1.5 billion people have no access to electricity.',
+      text1: 'About 840 million people have no access to electricity.',
       text2: 'According to the United Nations, electricity demand is expected to increase by 70% by 2035.',
       text3: 'It\'s estimated that fossil fuel reserves will be depleted in the next 52 years.',
     },
