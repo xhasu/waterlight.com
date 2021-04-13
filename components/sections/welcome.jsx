@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import useBodyOverflow from '../../hooks/useBodyOverflow';
 import useTranslation from '../../hooks/useTranslation';
 
+import { gsap } from 'gsap/dist/gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+
 import Video from '../ui/video'
 import Popup from '../layouts/popup'
 
+gsap.registerPlugin(ScrollTrigger);
 
 const Welcome = () => {
 
@@ -21,6 +25,21 @@ const Welcome = () => {
       return !prev;
     })
   };
+
+  useEffect(() => {
+
+    gsap.to('.welcome .container', {
+      scrollTrigger: {
+        trigger: '.award',
+        start: 'top 60px',
+        toggleActions: 'play reverse play reverse',
+        // markers: true,
+      },
+      opacity: 0,
+    })
+    
+    return () => { }
+  }, [])
 
   return (
     <section className="welcome" id="welcome">

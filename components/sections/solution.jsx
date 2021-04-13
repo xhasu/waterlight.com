@@ -46,7 +46,7 @@ const Solution = () => {
       scrollTrigger: {
         trigger: '.solution-product',
         // start: 'top 30%',
-        start: 'bottom 110%',
+        start: 'bottom 90%',
         toggleActions: 'play reverse play reverse',
         // markers: true,
       },

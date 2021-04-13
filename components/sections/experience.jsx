@@ -99,6 +99,8 @@ const Experience = () => {
         <div className="panel">
           <div className="head-box box-right compact">
             <div className="experience-media">
+              <br/>
+              <br/>
               <img src="/images/product/01.png" alt=""/>
               <img src="/images/product/02.png" alt=""/>
             </div>

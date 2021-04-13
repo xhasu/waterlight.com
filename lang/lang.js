@@ -98,8 +98,8 @@ export const Lang = {
     intro: {
       stage1: {
         title: 'What is ',
-        text1: 'A device that provides electrical power using only salt-water.',
-        text2: 'This thanks to the ionization of an electrolyte made up of saltwater that transforms the magnesium on the inside into electrical energy.'
+        text1: 'A device that provides electrical power using only salt water.',
+        text2: 'This thanks to the ionization of an electrolyte made up of salt water that transforms the magnesium on the inside into electrical energy.'
       },
       stage2: {
         title: 'Clean and renewable energy',
@@ -107,11 +107,11 @@ export const Lang = {
       },
       stage3: {
         title: 'Whenever and wherever',
-        text: 'lighting available 24/7 in any location',
+        text: 'lighting available 24/7 in any location.',
       },
       stage4: {
         title: 'Rechargeable battery',
-        text: 'for mobile and electronic devices',
+        text: 'for mobile and electronic devices.',
       },
       stage5: {
         title: 'Easily adaptable ',
@@ -121,7 +121,7 @@ export const Lang = {
     inspire: {
       title: 'Why ',
       subtitle: 'THE WORLD NEEDS A CLEAN ENERGY REVOLUTION BECAUSE ',
-      text1: 'About 1.5 billion people have no access to electricity',
+      text1: 'About 1.5 billion people have no access to electricity.',
       text2: 'According to the United Nations, electricity demand is expected to increase by 70% by 2035.',
       text3: 'It\'s estimated that fossil fuel reserves will be depleted in the next 52 years.',
     },
@@ -136,14 +136,14 @@ export const Lang = {
     },
     experience: {
       subtitle: 'HOW IT WORKS?',
-      title: 'Born from something natural and evolves into something astonishing',
+      title: 'Born from something natural and evolves into something astonishing.',
       stage1: {
         title: 'ANCESTRAL CONNECTION',
         text: 'The design is inspired by the Colombian Wayúu community and their ancestral connection with the sea.',
       },
       stage2: {
         title: 'TRADITION',
-        text: 'Strap knitted with kanas figures, millenary Wayúu handicrafts',
+        text: 'Strap knitted with kanas figures, millenary Wayúu handicrafts.',
       },
       stage3: {
         title: 'RECYCLABLE',
@@ -151,11 +151,11 @@ export const Lang = {
       },
       stage4: {
         title: 'WATERPROOF',
-        text: 'outdoor water resistant',
+        text: 'Outdoor water resistant.',
       },
       stage5: {
         title: 'ERGONOMIC',
-        text: 'non-slip surface',
+        text: 'Non-slip surface.',
       },
     },
     product: {

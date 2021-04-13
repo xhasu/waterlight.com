@@ -11,6 +11,10 @@
   box-sizing: border-box;
   // z-index: 5;
 
+  @media only screen and (max-height: 720px) and (orientation: landscape) {
+    min-height: calc(100vh - 60px);
+  }
+
   @include below($tablet) {
     background-image: url('/images/sequence/000.png');
     background-position: center 10%;
@@ -55,15 +59,19 @@
     }
   }
   &-caption {
-    font-size: 20px;
+    margin-bottom: 60px;
+    font-size: 15px;
     font-weight: 500;
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    margin-bottom: 60px;
+
+    @media only screen and (max-height: 720px) and (orientation: landscape) {
+      margin-bottom: 25px;
+    }
+
     @include below($tablet) {
-      font-size: 15px;
       margin-bottom: 10px;
       letter-spacing: 3px;
     }
@@ -78,8 +86,15 @@
     box-sizing: border-box;
     z-index: 1;
 
+    @media only screen and (max-height: 720px) and (orientation: landscape) {
+      width: 20px;
+      height: auto;
+      bottom: 5px;
+    }
+
     @include below($tablet) {
       width: 10px;
+      height: auto;
       bottom: 5px;
     }
 

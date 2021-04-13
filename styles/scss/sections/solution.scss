@@ -128,7 +128,7 @@
   &-media {
     display: none;
     position: relative;
-    padding: 0 20px;
+    // padding: 0 20px;
     box-sizing: border-box;
     @include below($tablet) {
       display: block;
@@ -136,6 +136,26 @@
     img {
       @include img-fluid();
       margin-bottom: 16px;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+  
+      left: 0;
+      right: 0;
+      height: 100px;
+      background-image: transparent;
+      background-image: linear-gradient(0deg, black, transparent);
+  
+      user-select: none;
+      pointer-events: none;
+      z-index: 1;
+    }
+    &::after {
+      bottom: 0;
+      background-image: linear-gradient(0deg, black, transparent);
     }
   }
 
@@ -157,11 +177,11 @@
     z-index: 1;
 
     @include below($hd) {
-      max-width: 320px;
+      max-width: 420px;
       right: 240px;
     }
     @include below($desktop) {
-      right: 140px;
+      right: 200px;
     }
 
     @include below($laptop) {

@@ -66,11 +66,13 @@
     min-height: 60vh;
     @include below($tablet) {
       top: 0;
-      padding-top: 80px;
+      padding-top: 120px;
       min-height: 620px;
     }
     @include below($sm) {
+      padding-top: 160px;
       min-height: 420px;
+      min-height: 100vh;
     }
   }
 
@@ -168,7 +170,9 @@
       }
 
       @include below($sm) {
-        height: 420px;
+        // height: 420px;
+        height: 100vh;
+        background-position: 20% center;
       }
     }
 
