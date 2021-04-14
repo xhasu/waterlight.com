@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-share">
-              <a className="share-item" href="https://www.instagram.com/edina_waterlight//" target='_blank' rel="noopener">
+              <a className="share-item" href="https://www.instagram.com/edina_waterlight/" target='_blank' rel="noopener">
                 <span>
                   <img src="/images/icon-instagram.png" alt="instagram waterlight" width="40" height="40" />
                 </span>
