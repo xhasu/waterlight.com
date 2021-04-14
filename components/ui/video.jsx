@@ -5,7 +5,7 @@ const Video = () => {
 
   const { t, locale } = useTranslation();
 
-  const url = (locale == 'es' ? 'https://www.youtube.com/embed/ADgHMxuA8RA?rel=0' : 'https://www.youtube.com/embed/GwmMKTeWS3I?rel=0');
+  const url = (locale == 'es' ? 'https://www.youtube.com/embed/XVbI4XoqWZ4?rel=0' : 'https://www.youtube.com/embed/XVbI4XoqWZ4?rel=0');
 
   return (
     <div className="video">
