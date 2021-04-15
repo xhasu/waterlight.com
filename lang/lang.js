@@ -58,12 +58,12 @@ export const Lang = {
         text: 'Diseño inspirado en la comunidad colombiana Wayúu y su conexión ancestral con el mar.',
       },
       stage2: {
-        title: 'TRADICIÓN',
-        text: 'Correa tejida con figuras Kanas, artesanías milenarias Wayúu.',
-      },
-      stage3: {
         title: 'RECICLABLE',
         text: 'Ensamblado con materiales 100 % reciclables.',
+      },
+      stage3: {
+        title: 'TRADICIÓN',
+        text: 'Correa tejida con figuras Kanas, artesanías milenarias Wayúu.',
       },
       stage4: {
         title: 'WATERPROOF',
@@ -142,12 +142,12 @@ export const Lang = {
         text: 'The design is inspired by the Colombian Wayúu community and their ancestral connection with the sea.',
       },
       stage2: {
-        title: 'TRADITION',
-        text: 'Strap knitted with kanas figures, millenary Wayúu handicrafts.',
-      },
-      stage3: {
         title: 'RECYCLABLE',
         text: 'Assembled with 100% recyclable materials.',
+      },
+      stage3: {
+        title: 'TRADITION',
+        text: 'Strap knitted with kanas figures, millenary Wayúu handicrafts.',
       },
       stage4: {
         title: 'WATERPROOF',
