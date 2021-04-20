@@ -43,12 +43,12 @@ const Product = () => {
       <div className="container">
         <div className="product-slogan">
           {t('product.title')} <br />
-          <span>{t('product.subtitle')}</span>
+          <h3><span>{t('product.subtitle')}</span></h3>
         </div>
         <div className="product-media">
           <picture>
             <source media="(min-width: 640px)" srcSet="/images/product-composition.jpg"/>
-            <img src="/images/product-composition-xs.jpg" alt="" width="1274" height="797" />
+            <img src="/images/product-composition-xs.jpg" alt="Clean energy device Waterlight" width="1274" height="797" />
           </picture>
         </div>
         <div className="product-actions">

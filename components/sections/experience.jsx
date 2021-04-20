@@ -159,7 +159,7 @@ const Experience = () => {
             <img src="/images/product/hook.png" className="img-hook" alt="" />
             <img src="/images/product/part-left.png" className="img-part-left" alt="" />
             <img src="/images/product/part-right.png" className="img-part-right" alt="" />
-            <img src="/images/product/06.png" alt="" />
+            <img src="/images/product/06.png" alt="Waterlight Waterproof" />
             <img src="/images/product/07.png" alt="" />
           </div>
         </div>

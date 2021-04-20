@@ -141,13 +141,13 @@ const Inspire = () => {
       </div>
 
       <div className="side-decorate">
-        <img src="/images/side-decorate.png" alt="" width="104" height="271" />
+        <img src="/images/side-decorate.png" alt="Logo Waterlight" width="104" height="271" />
       </div>
 
       <div className="panel container inspire-head">
 
         <div className="head-info">
-          <div className="head-title lead">{t('inspire.title')} <br/> Waterlight?</div>
+          <h2 className="head-title lead">{t('inspire.title')} <br/> Waterlight?</h2>
         </div>
 
       </div>

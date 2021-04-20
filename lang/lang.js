@@ -1,7 +1,13 @@
 export const Lang = {
   es: {
-    appname: 'Waterlight ES',
-    title: 'Waterlight',
+    appname: 'Waterlight',
+    title: 'Energía Renovable | Waterlight',
+    description: 'Conoce el dispositivo que crea energía eléctrica renovable, limpia y sostenible utilizando solo el agua salada.',
+    keywords: 'energía renovable, alternativas energéticas, energias alternativas, energia limpia, tipos de energia renovable, energias sostenibles, tipo de energía no contaminante, energia alternativa renovable, recurso energetico renovable, energia producida por el agua, energía eléctrica renovable, nuevas energias renovables, generar energia con agua, revolucion energetica, innovacion en energias renovables, innovacion de energias renovables, generar luz con agua',
+    og: {
+      title: 'Alternativa energética | Waterlight',
+      description: 'Descubre como Waterlight mejora la calidad de vida de las comunidades sin acceso a energía eléctrica. Dispositivo que genera energía limpia y renovable.',
+    },
     cta: 'Más información',
     header: {
       what: '¿Qué es Waterlight?',
@@ -84,8 +90,14 @@ export const Lang = {
     }
   },
   en: {
-    appname: 'Waterlight EN',
-    title: 'Waterlight',
+    appname: 'Waterlight',
+    title: 'Clean Energy | Waterlight',
+    description: 'Meet the device that creates renewable, sustainable and  clean electrical energy using only salt water. Green Power!',
+    keywords: 'renewable energy, clean energy, renewable energy sources, energy alternatives, sustainable energies, types of renewable energy, green power, renewable energy resource, green electricity, electricity from water, alternative renewable energy, energy revolution, renewable electric energy, new renewable energies, innovation in renewable energy, renewable energy innovations, green energy innovations, energy produced by water',
+    og: {
+      title: 'Renewable Energy Source | Waterlight',
+      description: 'Waterlight improves the quality of life of communities without access to electricity. Device that generates clean and renewable energy.',
+    },
     cta: 'More information',
     header: {
       what: 'What is Waterlight?',

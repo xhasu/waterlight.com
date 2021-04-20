@@ -46,13 +46,13 @@ const Welcome = () => {
       
       <div className="container">
         <div className="welcome-logo">
-          <img src="/images/welcome-logo.png" alt="Waterlight" width="493" height="300" />
+          <img src="/images/welcome-logo.png" alt="Logo Waterlight Device" width="493" height="300" />
         </div>
         <div className="welcome-caption" onClick={handleVideoVisible}>
           {t('welcome.video')}
         </div>
         <div className="welcome-icon">
-          <img src="/images/icon-arrow-scroll.png" alt="Waterlight" width="30" height="20" />
+          <img src="/images/icon-arrow-scroll.png" alt="Scroll icon" width="30" height="20" />
         </div>
       </div>
 

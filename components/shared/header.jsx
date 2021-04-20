@@ -33,7 +33,7 @@ const Header = () => {
         <div className="header-container">
           <div className="header-brand">
             <a href="#welcome">
-              <img src="/images/brand.png" alt="Waterlight" width="81" height="37" />
+              <img src="/images/brand.png" alt="Logo Waterlight" width="81" height="37" />
             </a>
           </div>
           <ul className="header-links">

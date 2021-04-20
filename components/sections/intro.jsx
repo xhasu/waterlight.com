@@ -64,7 +64,7 @@ const Intro = () => {
       <div className="panel container">
 
         <div className="head-box box-left head-box-intro">
-          <div className="head-title">{t('intro.stage1.title')} <br/>WaterLight?</div>
+          <h2 className="head-title">{t('intro.stage1.title')} <br/>WaterLight?</h2>
           <div className="head-description">
             <p className="lead font-town font-medium">
               {t('intro.stage1.text1')}
@@ -80,16 +80,16 @@ const Intro = () => {
       <div className="intro-swiper">
         <Swiper loop="true" onSlideChange={handleSwiper} pagination={{el: '.intro-swiper .swiper-pagination', type: 'bullets'}}>
           <SwiperSlide className="intro-media">
-            <img src="/images/intro-01.png" alt="" width="960" height="1080" />
+            <img src="/images/intro-01.png" alt="Dispositivo energía renovable" width="960" height="1080" />
           </SwiperSlide>
           <SwiperSlide className="intro-media">
-            <img src="/images/intro-02.png" alt="" width="960" height="1080" />
+            <img src="/images/intro-02.png" alt="Electricity from water device" width="960" height="1080" />
           </SwiperSlide>
           <SwiperSlide className="intro-media">
-            <img src="/images/intro-03.png" alt="" width="960" height="1080" />
+            <img src="/images/intro-03.png" alt="Dispositivo Waterlight" width="960" height="1080" />
           </SwiperSlide>
           <SwiperSlide className="intro-media">
-            <img src="/images/intro-04.png" alt="" width="960" height="1080" />
+            <img src="/images/intro-04.png" alt="Waterlight Device" width="960" height="1080" />
           </SwiperSlide>
           <div className="swiper-pagination"></div>
         </Swiper>
@@ -98,7 +98,7 @@ const Intro = () => {
       <div className="panel container intro-box">
 
         <div className="head-box box-right head-bordered">
-          <div className="head-subtitle">{t('intro.stage2.title')}</div>
+          <h1 className="head-subtitle">{t('intro.stage2.title')}</h1>
           <div className="head-description">
             <p className="lead">
               {t('intro.stage2.text')}

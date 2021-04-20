@@ -9,7 +9,8 @@ const MainLayout = ({children}) => {
     <div className="app">
 
       <Head>
-        <title>WATERLIGHT</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+	      <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
       </Head>
 
       <Header />
