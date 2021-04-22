@@ -7,18 +7,7 @@ const Seo = () => {
 
   const { t } = useTranslation();
 
-  const schema = `
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "https://www.waterlight.com.co/",
-      "logo": "https://www.waterlight.com.co/images/welcome-logo.png",
-      "image" : "https://www.waterlight.com.co/images/solution-product-alter.png",
-      "description": "Conoce el dispositivo que crea energía eléctrica renovable, limpia y sostenible utilizando solo el agua salada. Waterlight mejora la calidad de vida de las comunidades sin acceso a energía eléctrica",
-      "addressLocality": "Bogotá, Colombia",
-      "email": "mailto:info@e-dina.com"
-    }
-  `;
+  const schema = `{ "@context": "https://schema.org", "@type": "Organization", "url": "https://www.waterlight.com.co/", "logo": "https://www.waterlight.com.co/images/welcome-logo.png", "image" : "https://www.waterlight.com.co/images/solution-product-alter.png", "description": "Conoce el dispositivo que crea energía eléctrica renovable, limpia y sostenible utilizando solo el agua salada. Waterlight mejora la calidad de vida de las comunidades sin acceso a energía eléctrica", "addressLocality": "Bogotá, Colombia", "email": "mailto:info@e-dina.com" }`;
 
   return (
     <Head>
