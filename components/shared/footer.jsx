@@ -86,10 +86,8 @@ const Footer = () => {
           <div>
             <span>{+new Date().getFullYear()} Waterlight, {t('footer.copyright')}</span>
           </div>
-          <div>
+          <div className="link">
             <span onClick={handleLegalVisible}>{t('footer.tyc')}</span>
-            {/* &nbsp; | &nbsp; */}
-            {/* <a href="#"><span>Cookies</span></a> */}
           </div>
         </div>
 

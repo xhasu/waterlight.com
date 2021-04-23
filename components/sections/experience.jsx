@@ -46,7 +46,7 @@ const Experience = () => {
         scrollTrigger: {
           trigger: item,
           start: 'top center',
-          end: 'bottom bottom',
+          end: '150% center',
           // pin: true,
           scrub: true,
           refreshPriority: -1,
@@ -54,14 +54,14 @@ const Experience = () => {
         }
       })
 
-      tlitem.from(item, {opacity: 0, y: '-15%'})
+      tlitem.from(item, {opacity: 0})
 
     })
 
     let tlprod = gsap.timeline({
       scrollTrigger: {
         trigger: '.experience-armed .armed',
-        start: 'top center',
+        start: '40px center',
         end:  'bottom center',
         scrub: true,
         refreshPriority: -1,

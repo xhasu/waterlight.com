@@ -32,7 +32,7 @@ const Inspire = () => {
 
     tlbg1.from('.inspire-background.bg-01', {opacity: 0})
       .to('.inspire-background.bg-01', {opacity: 0, duration: 0.5})
-      .from('.inspire-background.bg-02', {opacity: 0})
+      .to('.inspire-background.bg-02', {opacity: 0.4})
 
 
     // timeline head
@@ -74,6 +74,7 @@ const Inspire = () => {
       .to('.inspire-body .head-description', {opacity: 0})
     
     // inspire decorate
+    /*
     gsap.from('.inspire .side-decorate', {
       scrollTrigger: {
         trigger: '.inspire-body',
@@ -85,6 +86,7 @@ const Inspire = () => {
       opacity: 0,
       x: '-15%',
     })
+    */
 
     // inspire product side
     gsap.from('.inspire-product', {
@@ -140,9 +142,11 @@ const Inspire = () => {
         <img src="/images/inspire-product-03.png" alt=""/>
       </div>
 
+      {/* 
       <div className="side-decorate">
         <img src="/images/side-decorate.png" alt="Logo Waterlight" width="104" height="271" />
       </div>
+      */}
 
       <div className="panel container inspire-head">
 

@@ -55,6 +55,7 @@ const Solution = () => {
     
 
     // solution decorate
+    /*
     gsap.from('.solution .side-decorate', {
       scrollTrigger: {
         trigger: '.solution-box',
@@ -66,8 +67,10 @@ const Solution = () => {
       opacity: 0,
       x: '-15%',
     })
+    */
 
     // solution decorate
+    /*
     gsap.from('.solution-decorate', {
       scrollTrigger: {
         trigger: '.solution-box',
@@ -79,6 +82,7 @@ const Solution = () => {
       opacity: 0,
       y: '-50%',
     })
+    */
     
     return () => { }
   }, [])
@@ -94,7 +98,6 @@ const Solution = () => {
           <div className="head-title">{t('solution.headline')}</div>
           <div className="solution-media">
             <img src="/images/solution-product.png" alt="" width="240"/>
-            {/* <img src="/images/bottom-decorate.png" alt="" width="120" /> */}
           </div>
           <div className="head-description">
             <p className="lead font-town font-medium">
@@ -109,10 +112,10 @@ const Solution = () => {
       </div>
 
       <div className="solution-product">
-        {/* <img src="/images/solution-product.png" alt="" width="1374" height="1335"/> */}
         <img src="/images/solution-product-alter.png" alt="Dispositivo Waterlight" width="688" height="1390"/>
       </div>
 
+      {/*
       <div className="side-decorate">
         <img src="/images/side-decorate.png" alt="Logo Waterlight" width="104" height="271" />
       </div>
@@ -120,6 +123,7 @@ const Solution = () => {
       <div className="solution-decorate">
         <img src="/images/solution-decorate.png" alt="Logo Waterlight" width="284" height="1023" />
       </div>
+      */}
     </div>
   )
 }

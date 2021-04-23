@@ -23,11 +23,14 @@ const Intro = () => {
 
     const createTimeline = (element, index) => {
 
+      let start = index == 0 ? 'top 30%': 'top 40%';
+      let end = index == 0 ? 'bottom 30%': 'bottom 40%';
+
       let tl = gsap.timeline({
         scrollTrigger: {
           trigger: element,
-          start: 'top center',
-          end: "bottom center",
+          start: start,
+          end: end,
           toggleClass: { targets: element, className: 'animate' },
           pin: true,
           pinSpacing: true,

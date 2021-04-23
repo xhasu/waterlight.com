@@ -9,7 +9,7 @@
   align-items: flex-end;
   justify-content: center;
   box-sizing: border-box;
-  // z-index: 5;
+  z-index: 1;
 
   @media only screen and (max-height: 720px) and (orientation: landscape) {
     min-height: calc(100vh - 60px);
@@ -17,7 +17,7 @@
 
   @include below($tablet) {
     background-image: url('/images/sequence/000.png');
-    background-position: center 10%;
+    background-position: center center;
     background-size: auto 85%;
     background-repeat: no-repeat;
 
@@ -76,6 +76,7 @@
       letter-spacing: 3px;
     }
   }
+
   &-icon {
     @include absolute($bottom: 25px, $left: 0, $right: 0);
     margin-left: auto;

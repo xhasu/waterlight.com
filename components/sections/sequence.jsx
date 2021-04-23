@@ -59,9 +59,9 @@ const Sequence = () => {
         start: "top top",
         end: "bottom bottom",
         scrub: true,
+        refreshPriority: -2,
         // scrub: 0.5,
         // markers: true,
-        refreshPriority: -2,
       },
       onUpdate: render
     })
@@ -82,7 +82,9 @@ const Sequence = () => {
 
   return (
     <div className="sequence">
-      <canvas className="product-scrolling" ref={ref} />
+      <div className="sequence-wrapper">
+        <canvas className="product-scrolling" ref={ref} />
+      </div>
     </div>
   )
 }
