@@ -7,6 +7,7 @@
 
   width: 100%;
   max-width: 1298px;
+  min-width: 320px;
   height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
@@ -80,7 +81,7 @@
 
     @include below($tablet) {
       top: auto;
-      bottom: 25%;
+      bottom: 37px;
     }
 
     img {
@@ -109,6 +110,13 @@
       }
     }
     
+  }
+
+  .swiper-pagination {
+    display: none;
+    @include below($tablet + 1) {
+      display: block;
+    }
   }
 
   &-mini {

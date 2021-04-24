@@ -39,8 +39,8 @@ const Inspire = () => {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.inspire-head',
-        start: 'top center',
-        end: 'bottom center',
+        start: 'top 40%',
+        end: 'bottom 40%',
         toggleActions: 'play reverse play reverse',
         // scrub: true,
         pin: true,
@@ -54,7 +54,7 @@ const Inspire = () => {
     let tlsb = gsap.timeline({
       scrollTrigger: {
         trigger: '.inspire-body',
-        start: 'top center',
+        start: 'top 35%',
         end: 'bottom -200%',
         pin: true,
         scrub: true,

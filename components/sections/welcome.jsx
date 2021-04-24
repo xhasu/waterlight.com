@@ -37,6 +37,7 @@ const Welcome = () => {
         toggleActions: 'play reverse play reverse',
         // markers: true,
       },
+      duration: .2,
       opacity: 0,
     })
     

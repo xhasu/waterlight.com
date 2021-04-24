@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef, useContext } from 'react'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Autoplay, Navigation, Thumbs } from 'swiper'
+import SwiperCore, { Autoplay, Navigation, Thumbs, Pagination } from 'swiper'
 
 import { GalleryContext } from '../../contexts/gallery-context'
 
-SwiperCore.use([Autoplay, Navigation, Thumbs]);
+SwiperCore.use([Autoplay, Navigation, Thumbs, Pagination]);
 
 const Gallery = () => {
 
@@ -36,7 +36,7 @@ const Gallery = () => {
 
       <div className="gallery-content">
 
-        <Swiper className="gallery-swiper" ref={ref} loop={true} threshold={30} thumbs={{swiper: thumbsSwiper}}>
+        <Swiper className="gallery-swiper" ref={ref} loop={true} threshold={30} thumbs={{swiper: thumbsSwiper}} pagination={{type: 'fraction', el: '.swiper-pagination'}} >
           <SwiperSlide className="gallery-slide">
             <img src="/images/gallery/03.jpg" alt="" width="1258" height="711" />
           </SwiperSlide>
@@ -82,6 +82,9 @@ const Gallery = () => {
           <SwiperSlide className="gallery-slide">
             <img src="/images/gallery/17.jpg" alt="" width="1258" height="711" />
           </SwiperSlide>
+
+          <div className="swiper-pagination"></div>
+
         </Swiper>
 
         <div className="gallery-arrows">
