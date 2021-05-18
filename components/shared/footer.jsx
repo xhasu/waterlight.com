@@ -36,7 +36,9 @@ const Footer = () => {
         <div className="footer-flex">
 
           <div className="footer-brand">
-            <img src="/images/edina-logotype.png" alt="Logo Edina" width="155" height="38" />
+            <a href="https://www.edinaenergy.com/" target="_blank" rel="noopener">
+              <img src="/images/edina-logotype.png" alt="Logo Edina" width="155" height="38" />
+            </a>
           </div>
 
           <div className="footer-box">
