@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react'
 
-import Seo from './shared/Seo'
+import Seo from './shared/seo'
 import Welcome from './sections/welcome'
 import Sequence from './sections/sequence'
 import Intro from './sections/intro'
