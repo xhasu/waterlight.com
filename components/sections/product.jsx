@@ -52,7 +52,7 @@ const Product = () => {
           </picture>
         </div>
         <div className="product-actions">
-          <a href="mailto:info@e-dina.com" className="btn btn-secondary">{t('cta')}</a>
+          <button className="btn btn-secondary">{t('cta')}</button>
         </div>
       </div>
     </section>
