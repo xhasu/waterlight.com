@@ -34,7 +34,3 @@ yarn-error.log*
 .vercel
 
 /.vscode/
-
-/public/images/sequence/
-/public/media/
-*.mp4
